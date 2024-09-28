@@ -1,6 +1,6 @@
 package leetcode2416;
 
-import leetcode.challenge.leetcode2416.Solution;
+import leetcode.challenge.leetcode_2416.Solution;
 import org.junit.jupiter.api.Test;
 
 public class TestSolution {

@@ -1,4 +1,4 @@
-package leetcode.challenge.leetcode2416;
+package leetcode.challenge.leetcode_2416;
 
 import java.util.HashMap;
 import java.util.Map;
