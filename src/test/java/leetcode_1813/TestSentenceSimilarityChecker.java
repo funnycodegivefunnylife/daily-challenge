@@ -56,4 +56,16 @@ public class TestSentenceSimilarityChecker {
         String sentence2 = "ByI BMyQIqce b bARkkMaABi vlR RLHhqjNzCN oXvyK zRXR q ff B yHS OD KkvJA P JdWksnH";
         assert !SentenceSimilarityChecker.CHECKER.areSentencesSimilar(sentence1, sentence2);
     }
+
+    //"Ogn WtWj HneS"
+    //sentence2 =
+    //"Ogn WtWj HneS"
+
+    @Test
+    @DisplayName("Given sentence1 = 'Ogn WtWj HneS' and sentence2 = 'Ogn WtWj HneS', the method should return true")
+    public void test7() {
+        String sentence1 = "Ogn WtWj HneS";
+        String sentence2 = "Ogn WtWj HneS";
+        assert SentenceSimilarityChecker.CHECKER.areSentencesSimilar(sentence1, sentence2);
+    }
 }

@@ -3,7 +3,16 @@ package leetcode.challenge.leetcode_1813;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TwoPointerSentenceSimilarityChecker implements SentenceSimilarityChecker{
+
+
+
+
+
+public class SubstringCheckSentenceSimilarityChecker implements SentenceSimilarityChecker{
+
+
+
+
     @Override
     public boolean areSentencesSimilar(String sentence1, String sentence2) {
 
