@@ -1,6 +1,7 @@
 package leetcode.challenge.leetcode_2406;
 
 import java.util.List;
+import java.util.PriorityQueue;
 
 class BookingEvent {
     int time;
@@ -11,14 +12,14 @@ public class MeetingRoomCheckMapImpl implements MeetingRoomCheck{
     @Override
     public int minGroups(int[][] intervals) {
         List<BookingEvent> events = new java.util.ArrayList<>();
-        for (int i = 0; i < intervals.length; i++) {
+        for (int[] interval : intervals) {
             BookingEvent startEvent = new BookingEvent();
-            startEvent.time = intervals[i][0];
+            startEvent.time = interval[0];
             startEvent.isStart = true;
             events.add(startEvent);
 
             BookingEvent endEvent = new BookingEvent();
-            endEvent.time = intervals[i][1];
+            endEvent.time = interval[1];
             endEvent.isStart = false;
             events.add(endEvent);
         }
@@ -40,4 +41,6 @@ public class MeetingRoomCheckMapImpl implements MeetingRoomCheck{
 
         return maxBooking;
     }
+
 }
+
