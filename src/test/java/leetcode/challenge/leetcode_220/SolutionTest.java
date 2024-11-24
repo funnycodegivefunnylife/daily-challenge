@@ -26,5 +26,6 @@ class SolutionTest {
         int valueDiff = 3;
         boolean expected = false;
         boolean actual = solution.containsNearbyAlmostDuplicate(nums, indexDiff, valueDiff);
+        assertEquals(expected, actual);
     }
 }
