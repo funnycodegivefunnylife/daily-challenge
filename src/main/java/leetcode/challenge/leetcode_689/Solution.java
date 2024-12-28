@@ -26,12 +26,10 @@ class Solution {
 
     public DpEntry[][] initTableWithDefaultState(int n) {
         DpEntry[][] dp = new DpEntry[N_ARRAY_TO_RETURN + 1][n + 1];
-        for (int i = 0; i <= n; i++) {
-            dp[0][i] = DpEntry.newInstance(-1, -1, 0);
-        }
-
-        for (int i = 0; i <= N_ARRAY_TO_RETURN; i++) {
-            dp[i][0] = DpEntry.newInstance(-1, -1, 0);
+        for (int i = 0; i < dp.length; i++) {
+            for (int j = 0; j < dp[i].length; j++) {
+                dp[i][j] = DpEntry.newInstance(-1, -1, 0);
+            }
         }
 
         return dp;
@@ -52,7 +50,7 @@ class Solution {
         for (int i = 1; i <= maxSumTable.length - 1; i++) {
             for (int j = k * i; j <= n; j++) {
                 int candidateSum = prefixSum[j] - prefixSum[j - k] + maxSumTable[i - 1][j - k].value;
-                if (maxSumTable[i][j - 1] == null || candidateSum > maxSumTable[i][j - 1].value) {
+                if (candidateSum > maxSumTable[i][j - 1].value) {
                     maxSumTable[i][j] = DpEntry.newInstance(j - k, j, candidateSum);
                 } else {
                     maxSumTable[i][j] = DpEntry.newInstance(maxSumTable[i][j - 1].parentIndex, maxSumTable[i][j - 1].endIndex, maxSumTable[i][j - 1].value);
