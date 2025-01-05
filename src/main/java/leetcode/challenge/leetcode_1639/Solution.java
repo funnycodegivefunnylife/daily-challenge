@@ -45,14 +45,5 @@ class Solution {
         return countMap[i].getOrDefault(targetChar, 0);
     }
 
-    private int countAtIndex(String[] words, int i, int targetChar) {
-        int count = 0;
-        for (String word : words) {
-            if (targetChar == word.charAt(i)) {
-                count++;
-            }
-        }
 
-        return count;
-    }
 }
