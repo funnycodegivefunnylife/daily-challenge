@@ -10,10 +10,10 @@ public class TestCanArrange {
         return solution.canArrange(arr, k);
     }
 
-    //[5,5,1,2,3,4], k = 10
+    // [5,5,1,2,3,4], k = 10
     @Test
     public void test1() {
-        int[] arr = new int[]{5, 5, 1, 2, 3, 4};
+        int[] arr = new int[] {5, 5, 1, 2, 3, 4};
         int k = 10;
         assert !canArrange(arr, k);
     }

@@ -16,9 +16,7 @@ class TrieNode {
 class Trie {
     public TrieNode root = new TrieNode();
 
-    public Trie() {
-
-    }
+    public Trie() {}
 
     public void insert(String word) {
         char[] chars = word.toCharArray();
@@ -49,8 +47,6 @@ class Trie {
         return node.isEnd;
     }
 
-
-
     public boolean startsWith(String prefix) {
         char[] chars = prefix.toCharArray();
         TrieNode node = root;
@@ -65,7 +61,6 @@ class Trie {
         return true;
     }
 }
-
 
 public class WordSearchTrieImpl implements WordSearch {
 
@@ -108,7 +103,6 @@ public class WordSearchTrieImpl implements WordSearch {
         return result;
     }
 
-
     @Override
     public List<String> findWords(char[][] board, String[] words) {
         Trie trie = buildFromWords(words);
@@ -135,7 +129,6 @@ public class WordSearchTrieImpl implements WordSearch {
             List<String> wordsFound = searchWords(board, trie.root, visited, i, j, "");
             result.addAll(wordsFound);
         }
-
 
         return new ArrayList<>(result);
     }

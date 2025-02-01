@@ -1,7 +1,5 @@
 package leetcode.challenge.leetcode_1400;
 
-
-
 class Solution {
     public boolean canConstruct(String s, int k) {
 

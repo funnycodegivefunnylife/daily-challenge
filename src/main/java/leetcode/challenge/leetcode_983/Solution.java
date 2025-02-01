@@ -25,7 +25,6 @@ class Solution {
         return passCost;
     }
 
-
     public int findFirstGte(int[] nums, int target) {
         int start = 0;
         int end = nums.length - 1;

@@ -33,7 +33,7 @@ class Solution {
 
         dist[0][0] = 0;
 
-        int[][] dirs = new int[][]{{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
+        int[][] dirs = new int[][] {{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
 
         while (!pq.isEmpty()) {
             Node current = pq.poll();

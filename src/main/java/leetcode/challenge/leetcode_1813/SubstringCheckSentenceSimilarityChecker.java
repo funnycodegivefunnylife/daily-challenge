@@ -3,22 +3,18 @@ package leetcode.challenge.leetcode_1813;
 import java.util.ArrayList;
 import java.util.List;
 
-
-
-
-
-
-public class SubstringCheckSentenceSimilarityChecker implements SentenceSimilarityChecker{
-
-
-
+public class SubstringCheckSentenceSimilarityChecker implements SentenceSimilarityChecker {
 
     @Override
     public boolean areSentencesSimilar(String sentence1, String sentence2) {
 
-        return isPrefixAndSuffix(sentence1, sentence2) || isPrefixAndSuffix(sentence2, sentence1)
-                || sentence1.equals(sentence2) || sentence1.startsWith(sentence2 + " ") || sentence1.endsWith(" " + sentence2)
-                || sentence2.startsWith(sentence1 + " ") || sentence2.endsWith(" " + sentence1);
+        return isPrefixAndSuffix(sentence1, sentence2)
+                || isPrefixAndSuffix(sentence2, sentence1)
+                || sentence1.equals(sentence2)
+                || sentence1.startsWith(sentence2 + " ")
+                || sentence1.endsWith(" " + sentence2)
+                || sentence2.startsWith(sentence1 + " ")
+                || sentence2.endsWith(" " + sentence1);
     }
 
     private boolean isPrefixAndSuffix(String toBreak, String toCheck) {
@@ -42,7 +38,6 @@ public class SubstringCheckSentenceSimilarityChecker implements SentenceSimilari
             if (toCheck.startsWith(prefix) && toCheck.endsWith(suffix)) {
                 return true;
             }
-
         }
 
         return false;

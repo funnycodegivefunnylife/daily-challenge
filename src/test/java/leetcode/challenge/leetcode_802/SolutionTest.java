@@ -11,9 +11,9 @@ class SolutionTest {
 
     @Test
     void eventualSafeNodes() {
-        int[][] graph = {{1,2},{2,3},{5},{0},{5},{},{}};
+        int[][] graph = {{1, 2}, {2, 3}, {5}, {0}, {5}, {}, {}};
         List<Integer> result = solution.eventualSafeNodes(graph);
-        List<Integer> expected = List.of(2,4,5,6);
+        List<Integer> expected = List.of(2, 4, 5, 6);
 
         assert result.size() == expected.size();
         for (int i = 0; i < result.size(); i++) {

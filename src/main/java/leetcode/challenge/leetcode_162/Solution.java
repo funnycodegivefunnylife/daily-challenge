@@ -3,21 +3,21 @@ package leetcode.challenge.leetcode_162;
 class Solution {
     public int findPeakElement(int[] nums) {
 
-       int low = 0;
-       int high = nums.length - 1;
+        int low = 0;
+        int high = nums.length - 1;
 
-         while (low < high) {
-              int mid = low + (high - low) / 2;
-              if (isPeak(nums, mid)) {
+        while (low < high) {
+            int mid = low + (high - low) / 2;
+            if (isPeak(nums, mid)) {
                 return mid;
-              } else if (nums[mid] < nums[mid + 1]) {
+            } else if (nums[mid] < nums[mid + 1]) {
                 low = mid + 1;
-              } else {
+            } else {
                 high = mid;
-              }
-         }
+            }
+        }
 
-            return low;
+        return low;
     }
 
     public boolean isPeak(int[] nums, int i) {

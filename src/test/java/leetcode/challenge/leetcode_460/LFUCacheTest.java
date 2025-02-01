@@ -6,7 +6,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class LFUCacheTest {
 
-
     @Test
     void test1() {
         LFUCache lfuCache = new LFUCache(2);
@@ -39,9 +38,9 @@ class LFUCacheTest {
         assertEquals(expected, actual);
     }
 
-    //["LFUCache","get","put","get","put","put","get","get"]
-    //[[2],[2],[2,6],[1],[1,5],[1,2],[1],[2]]
-    //[null,-1,null,-1,null,null,2,6]
+    // ["LFUCache","get","put","get","put","put","get","get"]
+    // [[2],[2],[2,6],[1],[1,5],[1,2],[1],[2]]
+    // [null,-1,null,-1,null,null,2,6]
     @Test
     void test2() {
         LFUCache lfuCache = new LFUCache(2);
@@ -65,8 +64,8 @@ class LFUCacheTest {
         assertEquals(expected, actual);
     }
 
-    //["LFUCache","put","get","put","get","put","get"]
-    //[[2],[1,1],[1],[2,2],[2],[3,3],[2]]
+    // ["LFUCache","put","get","put","get","put","get"]
+    // [[2],[1,1],[1],[2,2],[2],[3,3],[2]]
 
     @Test
     void test3() {

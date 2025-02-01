@@ -6,7 +6,6 @@ interface Bookable {
     boolean book(int start, int end);
 }
 
-
 class MapTimestamp implements Bookable {
     private TreeMap<Integer, Integer> map;
 
@@ -33,7 +32,6 @@ class MapTimestamp implements Bookable {
         return true;
     }
 }
-
 
 public class MyCalendar2 {
     private Bookable bookable;

@@ -3,7 +3,6 @@ package leetcode.challenge.leetcode_2948;
 class Solution {
     public int[] lexicographicallySmallestArray(int[] nums, int limit) {
 
-
         int n = nums.length;
         int i = 0;
 
@@ -25,7 +24,6 @@ class Solution {
 
             i++;
         }
-
 
         return nums;
     }

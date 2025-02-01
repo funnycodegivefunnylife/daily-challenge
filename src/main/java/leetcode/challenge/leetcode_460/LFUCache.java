@@ -1,6 +1,5 @@
 package leetcode.challenge.leetcode_460;
 
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -23,6 +22,7 @@ class LFUCache {
     private Key head;
     private Key tail;
     Map<Integer, Key> cache;
+
     public LFUCache(int capacity) {
         this.capacity = capacity;
         head = new Key(-1, -1, -1);
@@ -31,7 +31,7 @@ class LFUCache {
         tail.prev = head;
         cache = new HashMap<>();
     }
-    
+
     public int get(int key) {
         if (cache.containsKey(key)) {
             Key keyToGet = cache.get(key);
@@ -43,7 +43,7 @@ class LFUCache {
             return -1;
         }
     }
-    
+
     public void put(int key, int value) {
 
         if (capacity == 0) {

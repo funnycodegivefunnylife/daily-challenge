@@ -1,6 +1,5 @@
 package leetcode.challenge.leetcode_220;
 
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeSet;
@@ -42,11 +41,9 @@ class SlidingWindowDuplicateChecker implements DuplicateChecker {
             map.put(num, map.getOrDefault(num, 0) + 1);
         }
 
-
         return false;
     }
 }
-
 
 class Solution {
     public boolean containsNearbyAlmostDuplicate(int[] nums, int indexDiff, int valueDiff) {

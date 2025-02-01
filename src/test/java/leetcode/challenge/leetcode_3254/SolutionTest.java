@@ -9,11 +9,10 @@ class SolutionTest {
 
     @Test
     void test1() {
-        int[] nums = new int[]{1,2,3,4,3,2,5};
+        int[] nums = new int[] {1, 2, 3, 4, 3, 2, 5};
         int k = 3;
-        int[] expected = new int[]{3,4,-1,-1,-1};
+        int[] expected = new int[] {3, 4, -1, -1, -1};
         int[] actual = solution.resultsArray(nums, k);
         assertArrayEquals(expected, actual);
     }
-
 }

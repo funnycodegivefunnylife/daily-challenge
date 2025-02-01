@@ -44,6 +44,4 @@ class Solution {
     private int countAtIndex(Map<Integer, Integer>[] countMap, int i, int targetChar) {
         return countMap[i].getOrDefault(targetChar, 0);
     }
-
-
 }

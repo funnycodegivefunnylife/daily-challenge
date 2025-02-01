@@ -1,7 +1,5 @@
 package leetcode.challenge.leetcode_200;
 
-import java.sql.SQLOutput;
-
 class Solution {
     public int numIslands(char[][] grid) {
 

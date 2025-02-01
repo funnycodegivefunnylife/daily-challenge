@@ -21,7 +21,6 @@ class Solution {
     public int[] leftmostBuildingQueries(int[] heights, int[][] queries) {
         int[] result = new int[queries.length];
 
-
         Query[] queryArray = new Query[queries.length];
 
         for (int i = 0; i < queries.length; i++) {
@@ -85,7 +84,6 @@ class Solution {
             result[originalIndex] = matchIndex;
         }
 
-
         return result;
     }
 
@@ -111,5 +109,4 @@ class Solution {
 
         return heights[ascending.get(left)] > heights[x] ? ascending.get(left) : -1;
     }
-
-} 
+}

@@ -2,7 +2,7 @@ package leetcode.challenge.leetcode_2658;
 
 class Solution {
 
-    int[][] directions = new int[][]{{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
+    int[][] directions = new int[][] {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
 
     public int findMaxFish(int[][] grid) {
         boolean[][] visited = new boolean[grid.length][grid[0].length];

@@ -6,11 +6,10 @@ import org.junit.jupiter.api.Test;
 public class TestSolution {
     private static final Solution solution = new Solution();
 
-
     @Test
     public void test1() {
-        String[] words = {"abc","ab","bc","b"};
-        int[] expected = {5,4,3,2};
+        String[] words = {"abc", "ab", "bc", "b"};
+        int[] expected = {5, 4, 3, 2};
         assert equal(solution.sumPrefixScores(words), expected);
     }
 
@@ -25,7 +24,6 @@ public class TestSolution {
         }
         return true;
     }
-
 
     @Test
     public void test2() {

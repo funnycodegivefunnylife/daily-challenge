@@ -19,10 +19,8 @@ class Solution {
                     res = s.substring(i, j + 1);
                 }
             }
-
         }
 
         return res;
     }
-
 }

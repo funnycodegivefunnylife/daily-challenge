@@ -14,7 +14,7 @@ class Solution {
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
                 if (isWater[i][j] == 1) {
-                    queue.add(new int[]{i, j});
+                    queue.add(new int[] {i, j});
                     heights[i][j] = 0;
                 } else {
                     heights[i][j] = Integer.MAX_VALUE;
@@ -22,9 +22,8 @@ class Solution {
             }
         }
 
-        int direction[][] = new int[][]{{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
-        
-        
+        int direction[][] = new int[][] {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
+
         while (!queue.isEmpty()) {
             int[] front = queue.poll();
             int i = front[0], j = front[1];
@@ -35,7 +34,7 @@ class Solution {
 
                 if (x >= 0 && x < m && y >= 0 && y < n && heights[x][y] > heights[i][j] + 1) {
                     heights[x][y] = heights[i][j] + 1;
-                    queue.add(new int[]{x, y});
+                    queue.add(new int[] {x, y});
                 }
             }
         }

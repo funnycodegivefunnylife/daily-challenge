@@ -44,7 +44,6 @@ class BinaryTrie {
     }
 }
 
-
 class Solution {
     public String findDifferentBinaryString(String[] nums) {
         BinaryTrie trie = new BinaryTrie();

@@ -1,6 +1,5 @@
 package leetcode.challenge.leetcode_146;
 
-
 import java.util.Map;
 
 class Node {
@@ -14,7 +13,6 @@ class Node {
         this.value = value;
     }
 }
-
 
 public class LRUCacheLinkedListImpl implements ILRUCache {
     private Map<Integer, Node> map;
@@ -30,7 +28,6 @@ public class LRUCacheLinkedListImpl implements ILRUCache {
         tail.prev = head;
         map = new java.util.HashMap<>();
     }
-
 
     public int get(int key) {
         if (map.containsKey(key)) {
@@ -60,7 +57,6 @@ public class LRUCacheLinkedListImpl implements ILRUCache {
         }
         node.value = value;
         addFirst(node);
-
     }
 
     private void addFirst(Node node) {
@@ -98,6 +94,4 @@ public class LRUCacheLinkedListImpl implements ILRUCache {
     public boolean isFull() {
         return map.size() == capacity;
     }
-
-
 }

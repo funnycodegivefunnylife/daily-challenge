@@ -1,16 +1,12 @@
 package leetcode.challenge.leetcode_525;
 
-import java.util.HashMap;
-import java.util.Map;
-
 class Solution {
     public int findMaxLength(int[] nums) {
         int[] prefixSums = new int[nums.length + 1];
         int n = nums.length;
         for (int i = 1; i <= n; i++) {
-            prefixSums[i] = prefixSums[ i - 1] + nums[i - 1];
+            prefixSums[i] = prefixSums[i - 1] + nums[i - 1];
         }
-
 
         int result = 0;
 

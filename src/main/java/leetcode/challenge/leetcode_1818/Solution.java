@@ -25,7 +25,6 @@ class Solution {
             maxChange = Math.max(maxChange, change);
         }
 
-
         long sum = 0;
 
         for (int i = 0; i < nums1.length; i++) {
@@ -77,7 +76,7 @@ class Solution {
         int result = -1;
 
         while (left < right) {
-            int mid = (int) Math.ceil((left + right) * 1.0/ 2);
+            int mid = (int) Math.ceil((left + right) * 1.0 / 2);
 
             if (nums[mid] <= target) {
                 left = mid;

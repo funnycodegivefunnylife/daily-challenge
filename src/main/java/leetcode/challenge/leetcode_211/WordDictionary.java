@@ -1,6 +1,5 @@
 package leetcode.challenge.leetcode_211;
 
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -25,10 +24,9 @@ class Node {
 
 class WordDictionary {
     Node root = new Node();
-    public WordDictionary() {
-        
-    }
-    
+
+    public WordDictionary() {}
+
     public void addWord(String word) {
         char[] charArray = word.toCharArray();
         Node node = root;
@@ -39,7 +37,7 @@ class WordDictionary {
 
         node.isEnd = true;
     }
-    
+
     public boolean search(String word) {
         return dfs(root, word);
     }

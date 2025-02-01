@@ -7,8 +7,8 @@ import static org.junit.jupiter.api.Assertions.*;
 class SolutionTest {
     Solution solution = new Solution();
 
-    //Input: candies = [5,8,6], k = 3
-    //Output: 5
+    // Input: candies = [5,8,6], k = 3
+    // Output: 5
     @Test
     public void test1() {
         int[] candies = new int[] {5, 8, 6};
@@ -17,12 +17,11 @@ class SolutionTest {
         int actual = solution.maximumCandies(candies, k);
 
         assert actual == 5;
-
     }
 
-    //[2,5]
-    //k =
-    //11
+    // [2,5]
+    // k =
+    // 11
 
     @Test
     public void test2() {
@@ -32,7 +31,5 @@ class SolutionTest {
         int actual = solution.maximumCandies(candies, k);
 
         assert actual == 0;
-
     }
-
 }

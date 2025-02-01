@@ -62,7 +62,6 @@ class NodeState {
     }
 }
 
-
 class Solution {
     public int slidingPuzzle(int[][] board) {
 
@@ -80,7 +79,7 @@ class Solution {
 
         NodeState start = new NodeState(board, startZeroX, startZeroY, 0);
 
-        int[][] nextMoves = new int[][]{{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
+        int[][] nextMoves = new int[][] {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
 
         Queue<NodeState> queue = new LinkedList<>();
 

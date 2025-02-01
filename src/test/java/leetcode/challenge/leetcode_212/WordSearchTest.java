@@ -10,26 +10,26 @@ class WordSearchTest {
     @Test
     void test1() {
         char[][] board = {
-                {'o', 'a', 'a', 'n'},
-                {'e', 't', 'a', 'e'},
-                {'i', 'h', 'k', 'r'},
-                {'i', 'f', 'l', 'v'}
+            {'o', 'a', 'a', 'n'},
+            {'e', 't', 'a', 'e'},
+            {'i', 'h', 'k', 'r'},
+            {'i', 'f', 'l', 'v'}
         };
         String word = "oath";
         List<String> expected = List.of("oath");
 
-        assert ListUtil.listEquals(WordSearch.INTERFACE.findWords(board, new String[]{word}), expected);
+        assert ListUtil.listEquals(WordSearch.INTERFACE.findWords(board, new String[] {word}), expected);
     }
 
     @Test
     void test2() {
         char[][] board = {
-                {'a', 'b'},
-                {'c', 'd'}
+            {'a', 'b'},
+            {'c', 'd'}
         };
         String word = "abcb";
         List<String> expected = List.of();
 
-        assert ListUtil.listEquals(WordSearch.INTERFACE.findWords(board, new String[]{word}), expected);
+        assert ListUtil.listEquals(WordSearch.INTERFACE.findWords(board, new String[] {word}), expected);
     }
 }

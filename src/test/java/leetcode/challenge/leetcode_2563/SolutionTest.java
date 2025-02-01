@@ -7,10 +7,9 @@ import static org.junit.jupiter.api.Assertions.*;
 class SolutionTest {
     Solution solution = new Solution();
 
-
     @Test
     void test1() {
-        int[] nums = new int[]{0,1,7,4,4,5};
+        int[] nums = new int[] {0, 1, 7, 4, 4, 5};
         int lower = 3;
         int upper = 6;
         long expected = 6;
@@ -18,10 +17,10 @@ class SolutionTest {
         assertEquals(expected, actual);
     }
 
-    //searchFirstLessThanFromBeginning
+    // searchFirstLessThanFromBeginning
     @Test
     void test2() {
-        int[] nums = new int[]{0,1,7,4,4,5};
+        int[] nums = new int[] {0, 1, 7, 4, 4, 5};
         int target = 3;
         int expected = 1;
         int actual = solution.searchFirstLessThanFromBeginning(nums, 0, nums.length - 1, target);

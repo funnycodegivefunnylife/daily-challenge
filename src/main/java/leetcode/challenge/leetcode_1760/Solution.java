@@ -14,20 +14,19 @@ class Solution {
             } else {
                 low = mid + 1;
             }
-
         }
 
         return low;
     }
 
     private int findMax(int[] nums) {
-       int max = Integer.MIN_VALUE;
+        int max = Integer.MIN_VALUE;
 
-       for (int num: nums) {
-           max = Math.max(num, max);
-       }
+        for (int num : nums) {
+            max = Math.max(num, max);
+        }
 
-       return max;
+        return max;
     }
 
     public boolean canDivide(int[] nums, int maxOperations, int size) {

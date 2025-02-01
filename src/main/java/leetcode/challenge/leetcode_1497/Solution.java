@@ -1,8 +1,6 @@
 package leetcode.challenge.leetcode_1497;
 
 import java.util.Arrays;
-import java.util.Map;
-import java.util.stream.Collectors;
 
 public class Solution {
     public boolean canArrange(int[] arr, int k) {

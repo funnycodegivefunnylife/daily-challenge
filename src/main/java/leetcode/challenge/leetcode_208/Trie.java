@@ -1,7 +1,5 @@
 package leetcode.challenge.leetcode_208;
 
-import java.util.List;
-
 class TrieNode {
     public TrieNode[] children = new TrieNode[26];
     public boolean isEnd = false;
@@ -14,9 +12,7 @@ class TrieNode {
 public class Trie {
     private TrieNode root = new TrieNode();
 
-    public Trie() {
-
-    }
+    public Trie() {}
 
     public void insert(String word) {
         char[] chars = word.toCharArray();
@@ -46,7 +42,6 @@ public class Trie {
 
         return node.isEnd;
     }
-
 
     public boolean startsWith(String prefix) {
         char[] chars = prefix.toCharArray();

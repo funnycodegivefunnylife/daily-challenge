@@ -22,8 +22,7 @@ public class AllOne implements AllOneInterface {
                 BucketHelper.insertBucketAfter(head, newBucket);
                 newBucket.keys.add(key);
                 keyBucketMap.put(key, newBucket);
-            }
-            else {
+            } else {
                 head.next.keys.add(key);
                 keyBucketMap.put(key, head.next);
             }
@@ -85,9 +84,4 @@ public class AllOne implements AllOneInterface {
     private boolean isEmpty() {
         return head == null || head == head.next;
     }
-    
 }
-
-
-
-

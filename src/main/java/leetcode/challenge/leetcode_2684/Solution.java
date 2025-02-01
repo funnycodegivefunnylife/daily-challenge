@@ -1,12 +1,8 @@
 package leetcode.challenge.leetcode_2684;
 
-import java.util.LinkedList;
-import java.util.Queue;
-
 class Solution {
 
-    int[][] nextPoints = new int[][]{{-1, 1}, {0, 1}, {1, 1}};
-
+    int[][] nextPoints = new int[][] {{-1, 1}, {0, 1}, {1, 1}};
 
     public int maxMoves(int[][] grid) {
 
@@ -23,14 +19,14 @@ class Solution {
         return max;
     }
 
-    public int dfs(int [][] grid, int row, int col, int [][] dp) {
+    public int dfs(int[][] grid, int row, int col, int[][] dp) {
         if (dp[row][col] != 0) {
             return dp[row][col];
         }
 
         int max = 0;
 
-        for (int[] point: nextPoints) {
+        for (int[] point : nextPoints) {
             int nextRow = row + point[0];
             int nextCol = col + point[1];
 

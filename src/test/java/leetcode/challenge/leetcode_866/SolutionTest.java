@@ -5,7 +5,6 @@ import static org.junit.jupiter.api.Assertions.*;
 class SolutionTest {
     Solution solution = new Solution();
 
-
     @org.junit.jupiter.api.Test
     void test1() {
         int n = 6;
@@ -13,7 +12,6 @@ class SolutionTest {
         int actual = solution.primePalindrome(n);
         assertEquals(expected, actual);
     }
-
 
     @org.junit.jupiter.api.Test
     void test2() {
@@ -23,7 +21,6 @@ class SolutionTest {
         assertEquals(expected, actual);
     }
 
-
     @org.junit.jupiter.api.Test
     void test3() {
         int n = 13;
@@ -31,5 +28,4 @@ class SolutionTest {
         int actual = solution.primePalindrome(n);
         assertEquals(expected, actual);
     }
-
 }

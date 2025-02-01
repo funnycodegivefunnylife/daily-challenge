@@ -1,6 +1,5 @@
 package leetcode.challenge.leetcode_2458;
 
-
 import java.util.Queue;
 
 /**
@@ -18,14 +17,12 @@ import java.util.Queue;
  * }
  * }
  */
-
 class TreeNode {
     int val;
     TreeNode left;
     TreeNode right;
 
-    TreeNode() {
-    }
+    TreeNode() {}
 
     TreeNode(int val) {
         this.val = val;
@@ -50,7 +47,6 @@ class TreePath {
     }
 }
 
-
 public class TreeQuery {
 
     public int[] treeQueries(TreeNode root, int[] queries) {
@@ -59,7 +55,6 @@ public class TreeQuery {
         queue.add(new TreePath(root, 0, 0));
 
         int[] result = new int[queries.length];
-
 
         while (!queue.isEmpty()) {
             TreePath treePath = queue.poll();
@@ -90,5 +85,4 @@ public class TreeQuery {
 
         return result;
     }
-
 }

@@ -18,7 +18,7 @@ public class TestBucketHelper {
         assert prevBucket.getPrev() == null;
     }
 
-    //public static void removeBucket(Bucket currentBucket)
+    // public static void removeBucket(Bucket currentBucket)
     @Test
     public void testRemoveBucket() {
         // Test case 1

@@ -7,12 +7,12 @@ import static org.junit.jupiter.api.Assertions.*;
 class SolutionTest {
     Solution solution = new Solution();
 
-    //banned =
-    //[1,2,3,4,5,6,7]
-    //n =
-    //8
-    //maxSum =
-    //1
+    // banned =
+    // [1,2,3,4,5,6,7]
+    // n =
+    // 8
+    // maxSum =
+    // 1
 
     @Test
     public void test1() {
@@ -25,12 +25,12 @@ class SolutionTest {
         assertEquals(0, actual);
     }
 
-//    /banned =
-//[1,6,5]
-//n =
-//5
-//maxSum =
-//6
+    //    /banned =
+    // [1,6,5]
+    // n =
+    // 5
+    // maxSum =
+    // 6
 
     @Test
     public void test2() {
@@ -43,12 +43,12 @@ class SolutionTest {
         assertEquals(2, actual);
     }
 
-    //banned =
-    //[1,2,3,4,5,6,7]
-    //n =
-    //8
-    //maxSum =
-    //1
+    // banned =
+    // [1,2,3,4,5,6,7]
+    // n =
+    // 8
+    // maxSum =
+    // 1
 
     @Test
     public void test3() {
@@ -61,12 +61,12 @@ class SolutionTest {
         assertEquals(0, actual);
     }
 
-    //banned =
-    //[1,6,5]
-    //n =
-    //5
-    //maxSum =
-    //6
+    // banned =
+    // [1,6,5]
+    // n =
+    // 5
+    // maxSum =
+    // 6
 
     @Test
     public void test4() {
@@ -79,12 +79,12 @@ class SolutionTest {
         assertEquals(2, actual);
     }
 
-    //banned =
-    //[1,2,3,4,5,6,7]
-    //n =
-    //8
-    //maxSum =
-    //1
+    // banned =
+    // [1,2,3,4,5,6,7]
+    // n =
+    // 8
+    // maxSum =
+    // 1
 
     @Test
     public void test5() {
@@ -97,12 +97,12 @@ class SolutionTest {
         assertEquals(0, actual);
     }
 
-    //banned =
-    //[1,6,5]
-    //n =
-    //5
-    //maxSum =
-    //6
+    // banned =
+    // [1,6,5]
+    // n =
+    // 5
+    // maxSum =
+    // 6
 
     @Test
     public void test6() {

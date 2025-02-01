@@ -1,6 +1,5 @@
 package leetcode.challenge.leetcode_2337;
 
-
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -17,7 +16,6 @@ class SolutionTest {
         assert solution.canChange(start, target);
     }
 
-
     @Test
     public void test2() {
 
@@ -26,8 +24,6 @@ class SolutionTest {
 
         assert solution.canChange(start, target);
     }
-
-
 
     @Test
     public void test3() {

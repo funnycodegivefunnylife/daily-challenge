@@ -8,7 +8,8 @@ public class AllOneProcessor {
 
     public static List<String> process(String[] operations, String[] values) {
         AllOneInterface allOne = null;
-        List<Operation> operationList = Stream.of(operations).map(Operation::valueOf).toList();
+        List<Operation> operationList =
+                Stream.of(operations).map(Operation::valueOf).toList();
         List<String> valueList = Stream.of(values).toList();
         List<String> result = new ArrayList<>();
         for (int i = 0; i < operationList.size(); i++) {

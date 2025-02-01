@@ -52,7 +52,6 @@ class MinMaxInWindow {
     }
 }
 
-
 class Solution {
     public long continuousSubarrays(int[] nums) {
         MinMaxInWindow minMaxInWindow = new MinMaxInWindow(nums);

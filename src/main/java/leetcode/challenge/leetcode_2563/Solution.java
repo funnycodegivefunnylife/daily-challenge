@@ -12,13 +12,14 @@ class Solution {
             int minimumAtLower = lower - nums[i];
             int maximumAtUpper = upper - nums[i];
             int firstGreaterthanFromBeginning = searchFirstGreaterthanFromBeginning(nums, 0, i, maximumAtUpper);
-            int firstLessThanFromBeginning = searchFirstLessThanFromBeginning(nums, 0, i , minimumAtLower);
+            int firstLessThanFromBeginning = searchFirstLessThanFromBeginning(nums, 0, i, minimumAtLower);
 
             count += (firstGreaterthanFromBeginning - firstLessThanFromBeginning - 1);
         }
 
         return count;
     }
+
     public int searchFirstGreaterthanFromBeginning(int[] nums, int low, int high, int value) {
 
         while (low < high) {
@@ -29,7 +30,6 @@ class Solution {
             } else {
                 high = mid;
             }
-
         }
 
         return low;

@@ -1,6 +1,5 @@
 package leetcode.challenge.leetcode_2017;
 
-
 class Solution {
 
     public long gridGame(int[][] grid) {
@@ -10,8 +9,6 @@ class Solution {
             totalPoints += grid[0][i];
             totalPoints += grid[1][i];
         }
-
-
 
         grid[1][0] += grid[0][0];
         for (int i = 1; i < grid[0].length; i++) {

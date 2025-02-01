@@ -1,6 +1,5 @@
 package leetcode.challenge.leetcode_996;
 
-
 import java.util.*;
 
 class MathUtil {
@@ -33,7 +32,6 @@ class Node {
         return (bitmask & (1 << index)) > 0;
     }
 }
-
 
 class Solution {
     public int numSquarefulPerms(int[] nums) {

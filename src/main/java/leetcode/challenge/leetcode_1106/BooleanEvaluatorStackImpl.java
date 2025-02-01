@@ -21,7 +21,7 @@ enum Operator {
             return result;
         }
     },
-    
+
     AND('&') {
         @Override
         boolean apply(List<Boolean> operands) {
@@ -32,14 +32,15 @@ enum Operator {
             return result;
         }
     };
-    
+
     private final char symbol;
-    
+
     Operator(char symbol) {
         this.symbol = symbol;
     }
+
     abstract boolean apply(List<Boolean> operands);
-    
+
     public static boolean isExpression(char c) {
         return Operator.NOT.symbol == c || Operator.OR.symbol == c || Operator.AND.symbol == c;
     }
@@ -56,11 +57,12 @@ enum Operator {
 
 public class BooleanEvaluatorStackImpl implements BooleanEvaluator {
     public static BooleanEvaluatorStackImpl INSTANCE = new BooleanEvaluatorStackImpl();
+
     @Override
     public boolean evaluate(String expression) {
 
         Stack<Character> stack = new Stack<>();
-        
+
         for (int i = 0; i < expression.length(); i++) {
             char c = expression.charAt(i);
             if (Operator.isExpression(c)) {
@@ -85,7 +87,7 @@ public class BooleanEvaluatorStackImpl implements BooleanEvaluator {
                 stack.push(c);
             }
         }
-        
+
         return stack.peek() == 't';
     }
 }

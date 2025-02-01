@@ -3,11 +3,11 @@ package leetcode.challenge.leetcode_1514;
 import java.util.List;
 import java.util.Map;
 import java.util.PriorityQueue;
-import java.util.Set;
 
 class Node {
     int node;
     double prob;
+
     Node(int node, double prob) {
         this.node = node;
         this.prob = prob;

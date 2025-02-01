@@ -9,7 +9,7 @@ class SolutionTest {
 
     @Test
     public void test1() {
-        int nums[] = new int[]{3,6,1,2,5};
+        int nums[] = new int[] {3, 6, 1, 2, 5};
 
         assert solution.partitionArray(nums, 2) == 2;
     }

@@ -16,7 +16,6 @@ class Node {
     }
 }
 
-
 class Solution {
     public List<Integer> eventualSafeNodes(int[][] graph) {
         int n = graph.length;

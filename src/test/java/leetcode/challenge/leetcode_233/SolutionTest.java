@@ -23,5 +23,4 @@ class SolutionTest {
         int actual = solution.countDigitOne(n);
         assertEquals(expected, actual);
     }
-
 }

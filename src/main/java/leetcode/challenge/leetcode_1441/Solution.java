@@ -28,6 +28,4 @@ class Solution {
 
         return rs;
     }
-
-
 }

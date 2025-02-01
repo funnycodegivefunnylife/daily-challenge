@@ -15,7 +15,7 @@ class Trie {
         TrieNode node = root;
         for (char c : word.toCharArray()) {
             node = node.child.computeIfAbsent(c, k -> new TrieNode());
-            node.prefixCount++;  // Increment prefix count at each node
+            node.prefixCount++; // Increment prefix count at each node
         }
     }
 

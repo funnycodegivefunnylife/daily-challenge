@@ -3,7 +3,6 @@ package leetcode.challenge.leetcode_648;
 import java.util.List;
 import java.util.Optional;
 
-
 class TrieNode {
     public TrieNode[] children = new TrieNode[26];
     public boolean isEnd = false;
@@ -16,9 +15,7 @@ class TrieNode {
 class Trie {
     private TrieNode root = new TrieNode();
 
-    public Trie() {
-
-    }
+    public Trie() {}
 
     public void insert(String word) {
         char[] chars = word.toCharArray();
@@ -53,9 +50,7 @@ class Trie {
 
         return Optional.empty();
     }
-
 }
-
 
 class Solution {
     public String replaceWords(List<String> dictionary, String sentence) {

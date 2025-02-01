@@ -11,11 +11,7 @@ public class TestCalendar {
     @Test
     public void test() {
         MyCalendar myCalendar = new MyCalendar();
-        List<Boolean> results = List.of(
-                myCalendar.book(10, 20),
-                myCalendar.book(15, 25),
-                myCalendar.book(20, 30)
-        );
+        List<Boolean> results = List.of(myCalendar.book(10, 20), myCalendar.book(15, 25), myCalendar.book(20, 30));
 
         List<Boolean> expected = List.of(true, false, true);
 
@@ -35,14 +31,10 @@ public class TestCalendar {
                 myCalendar.book(19, 25),
                 myCalendar.book(3, 8),
                 myCalendar.book(8, 13),
-                myCalendar.book(18, 27)
-        );
+                myCalendar.book(18, 27));
 
         List<Boolean> expected = List.of(true, true, false, false, true, false, true, true, true, false);
 
         assert ListUtil.listEquals(results, expected);
     }
-
-
-
 }

@@ -10,9 +10,9 @@ class Node {
 class MapSum {
     Node root = new Node();
     Map<String, Integer> map = new java.util.HashMap<>();
-    public MapSum() {
-    }
-    
+
+    public MapSum() {}
+
     public void insert(String key, int val) {
         Node node = root;
         int bonus = val - map.getOrDefault(key, 0);
@@ -25,7 +25,7 @@ class MapSum {
         }
         map.put(key, val);
     }
-    
+
     public int sum(String prefix) {
         Node node = root;
         for (char c : prefix.toCharArray()) {

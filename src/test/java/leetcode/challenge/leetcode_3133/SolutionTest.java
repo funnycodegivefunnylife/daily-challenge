@@ -16,9 +16,9 @@ class SolutionTest {
         assertEquals(expected, actual);
     }
 
-    //Input: n = 2, x = 7
+    // Input: n = 2, x = 7
     //
-    //Output: 15
+    // Output: 15
 
     @Test
     void test2() {
@@ -29,9 +29,9 @@ class SolutionTest {
         assertEquals(expected, actual);
     }
 
-    //6715154
-    //x =
-    //7193485
+    // 6715154
+    // x =
+    // 7193485
 
     @Test
     void test3() {
@@ -42,9 +42,9 @@ class SolutionTest {
         assertEquals(expected, actual);
     }
 
-    //2
-    //x =
-    //4
+    // 2
+    // x =
+    // 4
 
     @Test
     void test4() {

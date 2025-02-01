@@ -1,6 +1,5 @@
 package leetcode.challenge.leetcode_2577;
 
-
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
@@ -8,6 +7,7 @@ class Cell {
     int x;
     int y;
     int time;
+
     Cell(int x, int y, int time) {
         this.x = x;
         this.y = y;
@@ -37,7 +37,7 @@ class Solution {
 
         pq.add(new Cell(0, 0, 0));
 
-        int[][] dirs = new int[][]{{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
+        int[][] dirs = new int[][] {{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
 
         while (!pq.isEmpty()) {
             Cell currentRoom = pq.poll();
@@ -62,10 +62,8 @@ class Solution {
                         shortestTime[newX][newY] = newTime;
                         pq.add(new Cell(newX, newY, newTime));
                     }
-
                 }
             }
-
         }
         return -1;
     }

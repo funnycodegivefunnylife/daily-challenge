@@ -1,8 +1,5 @@
 package leetcode.challenge.leetcode_1668;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class RepeatWordApproachCounter implements IMaximumRepeatingSubstringCounter {
     @Override
     public int maxRepeating(String sequence, String word) {
@@ -16,4 +13,3 @@ public class RepeatWordApproachCounter implements IMaximumRepeatingSubstringCoun
         return k;
     }
 }
-

@@ -6,7 +6,6 @@ class Solution {
     public int minOperations(List<Integer> nums, int k) {
         long targetBitmask = (1L << k) - 1;
 
-
         int i;
         int count = 0;
 
@@ -20,7 +19,7 @@ class Solution {
                 }
             }
         }
-        
+
         return nums.size() - i - 1;
     }
 }

@@ -15,6 +15,7 @@ class Solution {
         }
         return i == a.length();
     }
+
     public int findLUSlength(String[] strs) {
         // sort the strings by length
         Arrays.sort(strs, (a, b) -> b.length() - a.length());

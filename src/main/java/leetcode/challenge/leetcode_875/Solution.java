@@ -11,8 +11,7 @@ class Solution {
 
             if (canEatingWithSpeed(piles, h, mid)) {
                 high = mid;
-            }
-            else {
+            } else {
                 low = mid + 1;
             }
         }
@@ -23,7 +22,7 @@ class Solution {
     private int findMax(int[] piles) {
         int max = -1;
 
-        for (int pile: piles) {
+        for (int pile : piles) {
             if (pile > max) {
                 max = pile;
             }
@@ -32,13 +31,12 @@ class Solution {
         return max;
     }
 
-
     public boolean canEatingWithSpeed(int piles[], int hour, int speed) {
 
         long minHour = 0;
 
-        for (int pile: piles) {
-            int requiredHour = (int) Math.ceil(pile * 1.0/ speed );
+        for (int pile : piles) {
+            int requiredHour = (int) Math.ceil(pile * 1.0 / speed);
             minHour += requiredHour;
             if (minHour > hour) {
                 return false;

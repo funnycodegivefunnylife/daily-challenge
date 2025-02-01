@@ -1,6 +1,5 @@
 package leetcode.challenge.leetcode_1462;
 
-
 import java.util.ArrayList;
 import java.util.List;
 

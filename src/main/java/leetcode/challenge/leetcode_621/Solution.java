@@ -1,10 +1,5 @@
 package leetcode.challenge.leetcode_621;
 
-import java.util.PriorityQueue;
-import java.util.stream.Stream;
-
-
-
 class Solution {
     public int leastInterval(char[] tasks, int n) {
 
@@ -31,7 +26,5 @@ class Solution {
         }
 
         return Math.max(idleTime, 0) + tasks.length;
-
     }
-
 }

@@ -4,7 +4,6 @@ class Solution {
 
     static int[] isPrimes = new int[1001];
 
-
     static {
         isPrimes[2] = 1;
         for (int i = 3; i <= 1000; i++) {
@@ -37,9 +36,9 @@ class Solution {
 
         return result;
     }
-    
+
     public boolean primeSubOperation(int[] nums) {
-        
+
         int prev = -1;
 
         for (int i = 0; i < nums.length; i++) {
@@ -59,7 +58,6 @@ class Solution {
                 return false;
             }
         }
-
 
         return true;
     }

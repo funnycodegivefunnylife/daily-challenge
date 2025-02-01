@@ -1,6 +1,6 @@
 package leetcode.challenge.leetcode_338;
 
-public class MoveBitApproachForCountingBit implements ICountingBit{
+public class MoveBitApproachForCountingBit implements ICountingBit {
     @Override
     public int[] countBits(int num) {
 

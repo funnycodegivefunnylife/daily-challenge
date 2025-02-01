@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 public class TestBooleanEvaluator {
 
     private static final BooleanEvaluator evaluator = BooleanEvaluator.BOOLEAN_EVALUATOR;
+
     @Test
     @DisplayName("Test Case : !(f), expected = true")
     public void test1() {
@@ -18,7 +19,6 @@ public class TestBooleanEvaluator {
     public void test2() {
         assert !evaluator.evaluate("!(t)");
     }
-
 
     @Test
     @DisplayName("Test Case : &(|(f)), expected = false")

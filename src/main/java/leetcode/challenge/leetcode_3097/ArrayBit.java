@@ -5,7 +5,6 @@ class ArrayBit {
     int[] bits = new int[64];
     int orResult = 0;
 
-
     public void add(int n) {
 
         int index = 0;
@@ -14,7 +13,7 @@ class ArrayBit {
             int bit = n & 1;
 
             // case 1: bits[index] > 0
-            if(bit == 1) {
+            if (bit == 1) {
                 bits[index]++;
             }
 
@@ -24,9 +23,7 @@ class ArrayBit {
             n = n >> 1;
             index++;
         }
- 
     }
-
 
     public boolean gte(int k) {
         return orResult >= k;
@@ -54,7 +51,7 @@ class ArrayBit {
 
 class Solution {
     public int minimumSubarrayLength(int[] nums, int k) {
-        
+
         int start = 0;
 
         ArrayBit arrayBit = new ArrayBit();
@@ -70,12 +67,11 @@ class Solution {
         for (int end = 1; end < nums.length; end++) {
             arrayBit.add(nums[end]);
 
-            while(start <= end && arrayBit.gte(k)) {
+            while (start <= end && arrayBit.gte(k)) {
                 min = Math.min(min, end - start + 1);
                 arrayBit.remove(nums[start++]);
             }
         }
-
 
         return min == Integer.MAX_VALUE ? -1 : min;
     }

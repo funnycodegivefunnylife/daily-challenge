@@ -14,7 +14,6 @@ class NumberAndIndex {
     }
 }
 
-
 class Solution {
     public int[] smallestRange(List<List<Integer>> nums) {
         NumberAndIndex[] roots = new NumberAndIndex[nums.size()];
@@ -31,7 +30,8 @@ class Solution {
             roots[i] = root;
         }
 
-        java.util.PriorityQueue<NumberAndIndex> pq = new java.util.PriorityQueue<>(Comparator.comparingInt(a -> a.number));
+        java.util.PriorityQueue<NumberAndIndex> pq =
+                new java.util.PriorityQueue<>(Comparator.comparingInt(a -> a.number));
 
         for (NumberAndIndex root : roots) {
             pq.add(root);
@@ -55,7 +55,6 @@ class Solution {
 
             pq.add(min.next);
             maxVal = Math.max(maxVal, min.next.number);
-
         }
 
         result[0] = minStart;
@@ -63,5 +62,4 @@ class Solution {
 
         return result;
     }
-
 }

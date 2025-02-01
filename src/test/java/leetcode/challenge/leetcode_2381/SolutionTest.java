@@ -39,14 +39,14 @@ class SolutionTest {
         assert 'x' == actual;
     }
 
-    //s = "abc", shifts = [[0,1,0],[1,2,1],[0,2,1]]
-    //Output: "ace"
+    // s = "abc", shifts = [[0,1,0],[1,2,1],[0,2,1]]
+    // Output: "ace"
 
     @Test
     @DisplayName("Given string abc, shifts = [[0,1,0],[1,2,1],[0,2,1]], should return ace")
     public void test4() {
         String s = "abc";
-        int[][] shifts = new int[][] {{0,1,0},{1,2,1},{0,2,1}};
+        int[][] shifts = new int[][] {{0, 1, 0}, {1, 2, 1}, {0, 2, 1}};
         String actual = solution.shiftingLetters(s, shifts);
         String expected = "ace";
 

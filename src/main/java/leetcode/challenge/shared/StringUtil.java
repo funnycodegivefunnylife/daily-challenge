@@ -10,7 +10,7 @@ public class StringUtil {
         }
         return sb.toString();
     }
-    
+
     public static String longestCommonSuffix(String s1, String s2) {
         int i = 0;
         StringBuilder sb = new StringBuilder();
@@ -37,7 +37,7 @@ public class StringUtil {
         return i;
     }
 
-    public static int sizeOfLongestCommonPrefix(String [] words1, String [] words2) {
+    public static int sizeOfLongestCommonPrefix(String[] words1, String[] words2) {
         int i = 0;
         while (i < words1.length && i < words2.length && words1[i].equals(words2[i])) {
             i++;
@@ -45,9 +45,11 @@ public class StringUtil {
         return i;
     }
 
-    public static int sizeOfLongestCommonSuffix(String [] words1, String [] words2) {
+    public static int sizeOfLongestCommonSuffix(String[] words1, String[] words2) {
         int i = 0;
-        while (i < words1.length && i < words2.length && words1[words1.length - 1 - i].equals(words2[words2.length - 1 - i])) {
+        while (i < words1.length
+                && i < words2.length
+                && words1[words1.length - 1 - i].equals(words2[words2.length - 1 - i])) {
             i++;
         }
         return i;

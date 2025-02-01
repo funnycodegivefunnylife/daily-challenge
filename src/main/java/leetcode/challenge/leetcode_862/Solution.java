@@ -2,7 +2,6 @@ package leetcode.challenge.leetcode_862;
 
 import java.util.*;
 
-
 class Solution {
     public int shortestSubarray(int[] nums, int k) {
 
@@ -21,8 +20,6 @@ class Solution {
                 result = Math.min(result, end - queue.poll());
             }
 
-
-
             while (!queue.isEmpty() && prefixSum[end] <= prefixSum[queue.peekLast()]) {
                 queue.pollLast();
             }
@@ -30,9 +27,6 @@ class Solution {
             queue.offer(end);
         }
 
-        return result > nums.length ? -1: result;
+        return result > nums.length ? -1 : result;
     }
-
-
-
 }

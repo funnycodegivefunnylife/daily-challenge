@@ -19,7 +19,6 @@ class Solution {
             result[i] = sum;
         }
 
-
         return result;
     }
 }

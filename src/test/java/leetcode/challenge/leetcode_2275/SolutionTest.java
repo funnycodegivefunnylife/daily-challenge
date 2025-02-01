@@ -11,7 +11,7 @@ class SolutionTest {
 
     @Test
     void test1() {
-        int[] arr = new int[]{8,8};
+        int[] arr = new int[] {8, 8};
         int expected = 2;
         int actual = solution.largestCombination(arr);
         assertEquals(expected, actual);

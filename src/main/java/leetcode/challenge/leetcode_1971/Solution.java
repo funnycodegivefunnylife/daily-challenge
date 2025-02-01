@@ -40,8 +40,6 @@ class DisjointSet {
     }
 }
 
-
-
 class Solution {
     public boolean validPath(int n, int[][] edges, int source, int destination) {
         DisjointSet disjointSet = new DisjointSet(n);

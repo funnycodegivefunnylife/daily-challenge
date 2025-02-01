@@ -4,6 +4,7 @@ class Solution {
 
     private static final char[] VOWELS = new char[] {'a', 'e', 'i', 'o', 'u'};
     private static int VOWEL_BITMASK = 0;
+
     static {
         for (int i = 0; i < VOWELS.length; i++) {
             VOWEL_BITMASK |= 1 << (VOWELS[i] - 'a');
@@ -14,7 +15,7 @@ class Solution {
         int[] prefixSum = new int[words.length + 1];
 
         int idx = 1;
-        for (String word: words) {
+        for (String word : words) {
             char[] charArray = word.toCharArray();
 
             prefixSum[idx] = prefixSum[idx - 1];
@@ -28,7 +29,7 @@ class Solution {
 
         int[] rs = new int[queries.length];
         idx = 0;
-        for (int[] query: queries) {
+        for (int[] query : queries) {
             rs[idx++] = prefixSum[query[1] + 1] - prefixSum[query[0]];
         }
 

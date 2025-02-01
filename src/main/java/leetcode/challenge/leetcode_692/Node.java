@@ -10,7 +10,6 @@ class Node {
     boolean isLast;
 }
 
-
 class Trie {
     Node root = new Node();
     Map<String, Integer> frequencyMap = new java.util.HashMap<>();
@@ -39,10 +38,6 @@ class Trie {
         });
         return result.subList(0, k);
     }
-
-
-
-
 }
 
 class Solution {

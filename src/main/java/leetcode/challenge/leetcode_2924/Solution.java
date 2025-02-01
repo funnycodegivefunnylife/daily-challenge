@@ -1,6 +1,5 @@
 package leetcode.challenge.leetcode_2924;
 
-
 class Solution {
     public int findChampion(int n, int[][] edges) {
         int[] inDegree = new int[n];

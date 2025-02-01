@@ -32,4 +32,3 @@ class Solution {
         return result == nums.length ? -1 : result;
     }
 }
-

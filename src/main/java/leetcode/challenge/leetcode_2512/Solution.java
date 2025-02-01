@@ -16,7 +16,8 @@ class StudentScore {
 }
 
 class Solution {
-    public List<Integer> topStudents(String[] positive_feedback, String[] negative_feedback, String[] report, int[] student_id, int k) {
+    public List<Integer> topStudents(
+            String[] positive_feedback, String[] negative_feedback, String[] report, int[] student_id, int k) {
         Map<Integer, Integer> feedbackScore = new HashMap<>();
 
         for (String fb : positive_feedback) {
@@ -41,7 +42,6 @@ class Solution {
             }
             pq.add(new StudentScore(student_id[i], score));
         }
-
 
         List<Integer> result = new java.util.ArrayList<>();
 

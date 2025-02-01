@@ -5,14 +5,12 @@ class Solution {
         int low = 0;
         int high = findMax(candies);
 
-
         while (low < high) {
             int mid = (high + low + 1) / 2;
 
             if (canGiveEqualCandies(candies, k, mid)) {
                 low = mid;
-            }
-            else {
+            } else {
                 high = mid - 1;
             }
         }
@@ -23,7 +21,7 @@ class Solution {
     private int findMax(int[] nums) {
         int max = -1;
 
-        for (int num: nums) {
+        for (int num : nums) {
             if (num > max) {
                 max = num;
             }
@@ -38,7 +36,7 @@ class Solution {
         }
         long totalAllocated = 0;
 
-        for (int candie: candies) {
+        for (int candie : candies) {
             int nAllocated = candie / nCandies;
             totalAllocated += nAllocated;
             if (totalAllocated >= nChildren) {

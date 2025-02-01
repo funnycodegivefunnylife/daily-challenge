@@ -1,7 +1,5 @@
 package leetcode.challenge.leetcode_2294;
 
-
-
 import java.util.Arrays;
 
 class Solution {

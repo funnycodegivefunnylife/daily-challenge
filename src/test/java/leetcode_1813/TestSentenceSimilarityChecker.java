@@ -37,6 +37,7 @@ public class TestSentenceSimilarityChecker {
         String sentence2 = "Eating";
         assert SentenceSimilarityChecker.CHECKER.areSentencesSimilar(sentence1, sentence2);
     }
+
     @Test
     @DisplayName("Given sentence1 = 'Are You OK' and sentence2 = 'are you ok', the method should return true")
     public void test5() {
@@ -45,21 +46,22 @@ public class TestSentenceSimilarityChecker {
         assert !SentenceSimilarityChecker.CHECKER.areSentencesSimilar(sentence1, sentence2);
     }
 
-    //"B"
-    //sentence2 =
-    //"ByI BMyQIqce b bARkkMaABi vlR RLHhqjNzCN oXvyK zRXR q ff B yHS OD KkvJA P JdWksnH"
+    // "B"
+    // sentence2 =
+    // "ByI BMyQIqce b bARkkMaABi vlR RLHhqjNzCN oXvyK zRXR q ff B yHS OD KkvJA P JdWksnH"
 
     @Test
-    @DisplayName("Given sentence1 = 'B' and sentence2 = 'ByI BMyQIqce b bARkkMaABi vlR RLHhqjNzCN oXvyK zRXR q ff B yHS OD KkvJA P JdWksnH', the method should return false")
+    @DisplayName(
+            "Given sentence1 = 'B' and sentence2 = 'ByI BMyQIqce b bARkkMaABi vlR RLHhqjNzCN oXvyK zRXR q ff B yHS OD KkvJA P JdWksnH', the method should return false")
     public void test6() {
         String sentence1 = "B";
         String sentence2 = "ByI BMyQIqce b bARkkMaABi vlR RLHhqjNzCN oXvyK zRXR q ff B yHS OD KkvJA P JdWksnH";
         assert !SentenceSimilarityChecker.CHECKER.areSentencesSimilar(sentence1, sentence2);
     }
 
-    //"Ogn WtWj HneS"
-    //sentence2 =
-    //"Ogn WtWj HneS"
+    // "Ogn WtWj HneS"
+    // sentence2 =
+    // "Ogn WtWj HneS"
 
     @Test
     @DisplayName("Given sentence1 = 'Ogn WtWj HneS' and sentence2 = 'Ogn WtWj HneS', the method should return true")

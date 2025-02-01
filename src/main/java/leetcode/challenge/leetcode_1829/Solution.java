@@ -10,7 +10,6 @@ class Solution {
             prefixXor[i] = nums[i] ^ prefixXor[i - 1];
         }
 
-
         int result[] = new int[nums.length];
 
         for (int i = 0; i < nums.length; i++) {
@@ -30,5 +29,4 @@ class Solution {
 
         return result;
     }
-
 }

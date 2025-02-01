@@ -1,6 +1,5 @@
 package leetcode.challenge.leetcode_745;
 
-
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
@@ -20,9 +19,7 @@ class TrieNode {
 class Trie {
     private TrieNode root = new TrieNode();
 
-    public Trie() {
-
-    }
+    public Trie() {}
 
     public void insert(int index, String word) {
         char[] chars = word.toCharArray();
@@ -55,7 +52,6 @@ class Trie {
     }
 }
 
-
 class WordFilter {
     Trie prefix = new Trie();
     Trie suffix = new Trie();
@@ -73,7 +69,6 @@ class WordFilter {
     public String reverString(String str) {
         byte[] bytes = str.getBytes();
         byte[] result = new byte[bytes.length];
-
 
         for (int i = 0; i < bytes.length; i++) {
             result[i] = bytes[bytes.length - 1 - i];
@@ -96,10 +91,10 @@ class WordFilter {
     }
 
     public static void main(String[] args) {
-        //["WordFilter","f"]
-        //[[["apple"]],["a","e"]]
+        // ["WordFilter","f"]
+        // [[["apple"]],["a","e"]]
 
-        WordFilter wordFilter = new WordFilter(new String[]{"apple"});
+        WordFilter wordFilter = new WordFilter(new String[] {"apple"});
         wordFilter.f("a", "e");
     }
 }

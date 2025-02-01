@@ -1,8 +1,5 @@
 package leetcode.challenge.leetcode_494;
 
-import java.util.LinkedList;
-import java.util.Queue;
-
 class Node {
     int index;
     int sum;

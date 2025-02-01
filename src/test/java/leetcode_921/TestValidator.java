@@ -6,9 +6,9 @@ import org.junit.jupiter.api.Test;
 
 public class TestValidator {
 
-    //ParenthesesValidator
+    // ParenthesesValidator
 
-    //s = "())"
+    // s = "())"
     @Test
     @DisplayName("Given string s = ()), when calculate is called, then it should return 1")
     public void test1() {
@@ -17,7 +17,6 @@ public class TestValidator {
         int result = ParenthesesValidator.calculate(s);
         assert expected == result;
     }
-
 
     @Test
     @DisplayName("Given string s = (((, when calculate is called, then it should return 3")

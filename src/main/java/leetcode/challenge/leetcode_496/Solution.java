@@ -23,15 +23,14 @@ class Solution {
         for (int i = 0; i < nums2.length; i++) {
             map.put(nums2[i], i);
         }
-        
+
         int rs[] = new int[nums1.length];
         int it = 0;
-        for (int num: nums1) {
+        for (int num : nums1) {
             int index = map.get(num);
             rs[it++] = nextGreater[index];
         }
 
         return rs;
-
     }
 }

@@ -2,7 +2,6 @@ package leetcode.challenge.leetcode_2981;
 
 import org.junit.jupiter.api.Test;
 
-
 class SolutionTest {
     Solution solution = new Solution();
 
@@ -13,6 +12,5 @@ class SolutionTest {
         int actual = solution.maximumLength(s);
 
         assert actual == 2;
-
     }
 }

@@ -19,7 +19,6 @@ class Solution {
             employee.id = i;
             employee.favorite = new ArrayList<>();
             employees[i] = employee;
-
         }
 
         for (int i = 0; i < favorite.length; i++) {
@@ -27,6 +26,5 @@ class Solution {
         }
 
         return result;
-        
     }
 }

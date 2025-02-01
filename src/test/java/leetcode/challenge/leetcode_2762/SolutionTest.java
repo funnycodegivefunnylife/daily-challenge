@@ -9,8 +9,8 @@ class SolutionTest {
 
     @Test
     public void test1() {
-        //nums = [5,4,2,4]
-        //Output: 8
+        // nums = [5,4,2,4]
+        // Output: 8
 
         int[] nums = new int[] {5, 4, 2, 4};
         long expected = 8;
@@ -18,6 +18,5 @@ class SolutionTest {
         long actual = solution.continuousSubarrays(nums);
 
         assertEquals(expected, actual);
-
     }
 }

@@ -9,7 +9,7 @@ class Solution {
         int nBit = countNumberOfBit(maxVal);
         int[] oneBitCounts = new int[nBit];
 
-        for (int candidate: candidates) {
+        for (int candidate : candidates) {
             for (int i = 0; i < nBit; i++) {
                 if ((candidate & (1 << i)) != 0) {
                     oneBitCounts[i]++;
@@ -17,10 +17,9 @@ class Solution {
             }
         }
 
-
         int max = 0;
 
-        for (int value: oneBitCounts) {
+        for (int value : oneBitCounts) {
             max = Math.max(max, value);
         }
 
@@ -30,7 +29,7 @@ class Solution {
     public int findMax(int[] candidates) {
         int max = candidates[0];
 
-        for (int candidate: candidates) {
+        for (int candidate : candidates) {
             max = Math.max(max, candidate);
         }
         Arrays.stream(candidates).max().getAsInt();

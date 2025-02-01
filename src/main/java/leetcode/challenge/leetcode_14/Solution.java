@@ -1,6 +1,5 @@
 package leetcode.challenge.leetcode_14;
 
-
 class TrieNode {
     TrieNode[] children = new TrieNode[26];
     boolean isEndOfWord;
@@ -9,6 +8,7 @@ class TrieNode {
 
 class Trie {
     TrieNode root;
+
     public Trie() {
         root = new TrieNode();
     }
@@ -22,7 +22,6 @@ class Trie {
             }
             node = node.children[index];
             node.count++;
-
         }
         node.isEndOfWord = true;
     }
@@ -39,7 +38,6 @@ class Trie {
         return node.count == target;
     }
 }
-
 
 public class Solution {
     public String longestCommonPrefix(String[] strs) {

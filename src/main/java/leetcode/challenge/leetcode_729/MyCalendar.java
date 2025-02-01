@@ -24,8 +24,9 @@ class Node {
 
 class SegmentTree implements Bookable {
     Node root;
+
     public SegmentTree() {
-        root =  new Node(-1, -1);
+        root = new Node(-1, -1);
     }
 
     public boolean book(int start, int end) {
@@ -62,6 +63,7 @@ class SegmentTree implements Bookable {
 
 public class MyCalendar {
     Bookable bookable;
+
     public MyCalendar() {
         bookable = new SegmentTree();
     }

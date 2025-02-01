@@ -27,9 +27,6 @@ class Solution {
             current--;
         }
 
-
-
         return rs;
     }
-
 }

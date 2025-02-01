@@ -18,7 +18,6 @@ class Node {
     }
 }
 
-
 class Graph {
     Node[] nodes;
     int nNodes;
@@ -62,7 +61,6 @@ class Graph {
     }
 }
 
-
 class Solution {
     public int maxKDivisibleComponents(int n, int[][] edges, int[] values, int k) {
         Graph graph = new Graph(n);
@@ -78,5 +76,4 @@ class Solution {
 
         return graph.findConnectedComponents(0, k);
     }
-
 }

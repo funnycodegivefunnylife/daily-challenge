@@ -5,6 +5,7 @@ import java.util.*;
 class Pair {
     int node;
     int distance;
+
     public Pair(int node, int distance) {
         this.node = node;
         this.distance = distance;
@@ -44,7 +45,8 @@ class Solution {
         return result;
     }
 
-    private void updateShortestDistance(Map<Integer, List<Integer>> adjacentMap, int[] shortestDistance, int from, int to) {
+    private void updateShortestDistance(
+            Map<Integer, List<Integer>> adjacentMap, int[] shortestDistance, int from, int to) {
         if (shortestDistance[to] < shortestDistance[from] + 1) {
             return;
         }
@@ -68,7 +70,5 @@ class Solution {
                 }
             }
         }
-
     }
-
 }

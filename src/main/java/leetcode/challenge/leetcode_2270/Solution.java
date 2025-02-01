@@ -13,7 +13,7 @@ class Solution {
             long leftSum = prefixSum[i + 1];
             long rightSum = prefixSum[nums.length] - leftSum;
 
-            count += leftSum >= rightSum ? 1: 0;
+            count += leftSum >= rightSum ? 1 : 0;
         }
 
         return count;

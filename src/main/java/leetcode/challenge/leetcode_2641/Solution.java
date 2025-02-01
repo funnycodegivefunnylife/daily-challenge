@@ -7,8 +7,13 @@ class TreeNode {
     int val;
     TreeNode left;
     TreeNode right;
+
     TreeNode() {}
-    TreeNode(int val) { this.val = val; }
+
+    TreeNode(int val) {
+        this.val = val;
+    }
+
     TreeNode(int val, TreeNode left, TreeNode right) {
         this.val = val;
         this.left = left;
@@ -19,6 +24,7 @@ class TreeNode {
 class NodeWithLevel {
     TreeNode node;
     int level;
+
     NodeWithLevel(TreeNode node, int level) {
         this.node = node;
         this.level = level;

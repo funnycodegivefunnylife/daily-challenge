@@ -22,9 +22,7 @@ class Node {
 class WordDictionary {
     Node root = new Node();
 
-    public WordDictionary() {
-
-    }
+    public WordDictionary() {}
 
     public void addWord(String word) {
         char[] charArray = word.toCharArray();
@@ -53,7 +51,6 @@ class WordDictionary {
     }
 }
 
-
 class Solution {
     public String longestWord(String[] words) {
         WordDictionary wordDictionary = new WordDictionary();
@@ -76,7 +73,10 @@ class Solution {
                 }
             }
         }
-        int maxLength = result.stream().max(Comparator.comparingInt(String::length)).orElse("").length();
+        int maxLength = result.stream()
+                .max(Comparator.comparingInt(String::length))
+                .orElse("")
+                .length();
 
         List<String> maxWords = new java.util.ArrayList<>();
         for (String word : result) {
@@ -90,7 +90,6 @@ class Solution {
 
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.longestWord(new String[]{"w", "o"}));
+        System.out.println(solution.longestWord(new String[] {"w", "o"}));
     }
-
 }

@@ -23,7 +23,6 @@ class Solution {
         return low;
     }
 
-
     public boolean canDistribute(int[] quantities, int n, int nProduct) {
         int emptySlot = n;
         int nDistribute = 0;

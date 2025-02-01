@@ -1,15 +1,13 @@
 package leetcode.challenge.leetcode_329;
 
-
 import java.util.LinkedList;
 import java.util.Queue;
-
 
 class Solution {
     public int longestIncreasingPath(int[][] matrix) {
 
         int[][] inDegrees = new int[matrix.length][matrix[0].length];
-        int[][] directions = new int[][]{{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
+        int[][] directions = new int[][] {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
 
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[0].length; j++) {
@@ -29,7 +27,7 @@ class Solution {
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[0].length; j++) {
                 if (inDegrees[i][j] == 0) {
-                    zeroInDegreeCells.add(new int[]{i, j});
+                    zeroInDegreeCells.add(new int[] {i, j});
                 }
             }
         }
@@ -55,13 +53,11 @@ class Solution {
                     inDegrees[x][y]--;
 
                     if (inDegrees[x][y] == 0) {
-                        zeroInDegreeCells.add(new int[]{x, y});
+                        zeroInDegreeCells.add(new int[] {x, y});
                     }
                 }
             }
         }
-
-
 
         return result + 1;
     }

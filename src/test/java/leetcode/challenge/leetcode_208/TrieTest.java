@@ -6,8 +6,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class TrieTest {
 
-    //["Trie","insert","search","search","startsWith","insert","search"]
-    //[[],["apple"],["apple"],["app"],["app"],["app"],["app"]]
+    // ["Trie","insert","search","search","startsWith","insert","search"]
+    // [[],["apple"],["apple"],["app"],["app"],["app"],["app"]]
 
     @Test
     void test1() {

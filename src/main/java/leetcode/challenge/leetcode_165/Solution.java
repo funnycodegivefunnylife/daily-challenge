@@ -16,6 +16,7 @@ class Solution {
 
         return rs;
     }
+
     public int compareVersion(String version1, String version2) {
         List<Integer> v1 = parseVersion(version1);
         List<Integer> v2 = parseVersion(version2);

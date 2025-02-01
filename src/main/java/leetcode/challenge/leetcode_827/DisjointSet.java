@@ -1,13 +1,9 @@
 package leetcode.challenge.leetcode_827;
 
-import java.util.LinkedList;
-import java.util.Queue;
-
 class DisjointSet {
     int[] parent;
     int[] rank;
     int[] clusterSize;
-
 
     public DisjointSet(int n) {
         parent = new int[n];
@@ -58,7 +54,7 @@ class Solution {
 
         DisjointSet disjointSet = new DisjointSet(m * n);
 
-        int[][] directions = new int[][]{{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
+        int[][] directions = new int[][] {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
 
         int maxIsland = 0;
 
@@ -79,9 +75,7 @@ class Solution {
                     }
                 }
             }
-
         }
-
 
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
@@ -112,6 +106,4 @@ class Solution {
 
         return maxIsland;
     }
-
-
 }

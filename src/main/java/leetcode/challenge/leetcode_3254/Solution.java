@@ -1,12 +1,10 @@
 package leetcode.challenge.leetcode_3254;
 
-import java.util.Stack;
-
 class Solution {
     public int[] resultsArray(int[] nums, int k) {
 
         int start = 0;
-        int[] result= new int[nums.length - k + 1];
+        int[] result = new int[nums.length - k + 1];
         if (nums.length == 1 && k == 1) {
             result[0] = nums[0];
         }

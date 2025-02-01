@@ -1,6 +1,5 @@
 package leetcode.challenge.leetcode_2406;
 
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -11,17 +10,16 @@ class Node {
     int end;
     List<Node> children = new java.util.ArrayList<>();
 
-
     public boolean isIntersect(Node node) {
         return node.start == start || node.start == end || node.end == start || node.end == end;
     }
 
     public void addChildren(Node node) {
-       if (children.contains(node)) {
-           return;
-       }
+        if (children.contains(node)) {
+            return;
+        }
 
-         children.add(node);
+        children.add(node);
     }
 }
 
@@ -70,7 +68,7 @@ class Solution {
         visitedList.add(node.index);
         visited[node.index] = true;
 
-       int result = 1;
+        int result = 1;
         for (Node child : node.children) {
             result = Math.max(result, dfs(visitedList, child, visited));
         }

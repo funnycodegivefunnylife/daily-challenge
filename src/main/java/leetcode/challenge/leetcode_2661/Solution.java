@@ -1,7 +1,5 @@
 package leetcode.challenge.leetcode_2661;
 
-import java.util.Map;
-
 class Index {
     int x;
     int y;
@@ -39,5 +37,4 @@ class Solution {
 
         return -1;
     }
-
 }

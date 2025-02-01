@@ -8,7 +8,6 @@ class Solution {
             prefixSums[i] = prefixSums[i - 1] + code[i - 1];
         }
 
-
         int result[] = new int[code.length];
 
         for (int i = 1; i <= code.length; i++) {

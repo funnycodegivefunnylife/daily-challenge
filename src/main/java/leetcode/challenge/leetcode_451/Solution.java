@@ -1,6 +1,5 @@
 package leetcode.challenge.leetcode_451;
 
-
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
@@ -14,7 +13,6 @@ class Bucket {
     int frequency;
     Set<Character> characters = new HashSet<>();
 }
-
 
 class HashMapFrequencySort implements FrequencySort {
     public String frequencySort(String s) {
@@ -54,6 +52,7 @@ class HashMapFrequencySort implements FrequencySort {
 
 class Solution {
     static FrequencySort frequencySort = new HashMapFrequencySort();
+
     public String frequencySort(String s) {
 
         return frequencySort.frequencySort(s);

@@ -6,7 +6,7 @@ class Solution {
     public int minAbsDifference(int[] nums, int goal) {
 
         Arrays.sort(nums);
-        
+
         int n = nums.length;
         int[] prefixSum = new int[n + 1];
 
@@ -31,5 +31,4 @@ class Solution {
 
         return dp[goal][n];
     }
-
 }

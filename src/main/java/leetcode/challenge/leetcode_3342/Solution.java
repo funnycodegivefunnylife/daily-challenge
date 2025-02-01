@@ -1,6 +1,5 @@
 package leetcode.challenge.leetcode_3342;
 
-
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
@@ -39,7 +38,7 @@ class Solution {
 
         pq.add(new Room(0, 0, 0, 1));
 
-        int[][] dirs = new int[][]{{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
+        int[][] dirs = new int[][] {{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
 
         while (!pq.isEmpty()) {
             Room currentRoom = pq.poll();
@@ -57,17 +56,15 @@ class Solution {
                 int newX = currentRoom.x + dir[0];
                 int newY = currentRoom.y + dir[1];
 
-                if (newX >= 0 && newX < n && newY >=0 && newY < m) {
+                if (newX >= 0 && newX < n && newY >= 0 && newY < m) {
                     int newTime = Math.max(currentRoom.time, moveTime[newX][newY]) + currentRoom.minToMove;
 
                     if (newTime < shortestTime[newX][newY]) {
                         shortestTime[newX][newY] = newTime;
-                        pq.add(new Room(newX, newY, newTime, currentRoom.minToMove == 1 ? 2: 1));
+                        pq.add(new Room(newX, newY, newTime, currentRoom.minToMove == 1 ? 2 : 1));
                     }
-
                 }
             }
-
         }
         return -1;
     }

@@ -8,12 +8,11 @@ package leetcode.challenge.leetcode_374;
  *               otherwise return 0
  * int guess(int num);
  */
-
-
 abstract class GuessGame {
     int guess(int num) {
         return 0;
     }
+
     public abstract int guessNumber(int n);
 }
 
@@ -29,11 +28,9 @@ public class Solution extends GuessGame {
 
             if (result == 0) {
                 return mid;
-            }
-            else if (result == -1) {
+            } else if (result == -1) {
                 high = mid - 1;
-            }
-            else {
+            } else {
                 low = mid + 1;
             }
         }

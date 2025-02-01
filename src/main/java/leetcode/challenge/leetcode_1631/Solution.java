@@ -1,10 +1,7 @@
 package leetcode.challenge.leetcode_1631;
 
-
 import java.util.Comparator;
-import java.util.HashSet;
 import java.util.PriorityQueue;
-import java.util.Set;
 
 class Cell {
     int x;
@@ -24,7 +21,7 @@ class Solution {
         int[][] cost = new int[heights.length][heights[0].length];
         cost[0][0] = 0;
 
-        int[][] directions = new int[][]{{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
+        int[][] directions = new int[][] {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
 
         PriorityQueue<Cell> pq = new PriorityQueue<>(Comparator.comparingInt(a -> a.cost));
 
@@ -47,7 +44,11 @@ class Solution {
                 int newX = x + direction[0];
                 int newY = y + direction[1];
 
-                if (newX >= 0 && newX < heights.length && newY >= 0 && newY < heights[0].length && !visited[newX][newY]) {
+                if (newX >= 0
+                        && newX < heights.length
+                        && newY >= 0
+                        && newY < heights[0].length
+                        && !visited[newX][newY]) {
                     int newCost = Math.max(cell.cost, Math.abs(heights[newX][newY] - heights[x][y]));
                     if (cost[newX][newY] == 0 || newCost < cost[newX][newY]) {
                         cost[newX][newY] = newCost;

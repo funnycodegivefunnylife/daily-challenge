@@ -4,6 +4,7 @@ class Node {
     int val;
     Node next;
     Node prev;
+
     public Node(int val) {
         this.val = val;
     }
@@ -14,6 +15,7 @@ class MyCircularDeque {
     private Node tail;
     private int size;
     private int capacity;
+
     public MyCircularDeque(int k) {
         capacity = k;
     }

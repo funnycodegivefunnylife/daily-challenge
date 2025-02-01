@@ -1,8 +1,5 @@
 package leetcode.challenge.leetcode_689;
 
-
-
-
 class DpEntry {
     int parentIndex;
     int endIndex;
@@ -19,7 +16,6 @@ class DpEntry {
     }
 }
 
-
 class Solution {
 
     private static final Integer N_ARRAY_TO_RETURN = 3;
@@ -34,6 +30,7 @@ class Solution {
 
         return dp;
     }
+
     public int[] maxSumOfThreeSubarrays(int[] nums, int k) {
         int[] rs = new int[N_ARRAY_TO_RETURN];
 
@@ -53,7 +50,10 @@ class Solution {
                 if (candidateSum > maxSumTable[i][j - 1].value) {
                     maxSumTable[i][j] = DpEntry.newInstance(j - k, j, candidateSum);
                 } else {
-                    maxSumTable[i][j] = DpEntry.newInstance(maxSumTable[i][j - 1].parentIndex, maxSumTable[i][j - 1].endIndex, maxSumTable[i][j - 1].value);
+                    maxSumTable[i][j] = DpEntry.newInstance(
+                            maxSumTable[i][j - 1].parentIndex,
+                            maxSumTable[i][j - 1].endIndex,
+                            maxSumTable[i][j - 1].value);
                 }
             }
         }

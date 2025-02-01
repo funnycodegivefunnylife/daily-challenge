@@ -6,15 +6,15 @@ class Solution {
     public String longestDiverseString(int a, int b, int c) {
         PriorityQueue<int[]> pq = new PriorityQueue<>((x, y) -> y[1] - x[1]);
         if (a > 0) {
-            pq.add(new int[] { 0, a });
+            pq.add(new int[] {0, a});
         }
 
         if (b > 0) {
-            pq.add(new int[] { 1, b });
+            pq.add(new int[] {1, b});
         }
 
         if (c > 0) {
-            pq.add(new int[] { 2, c });
+            pq.add(new int[] {2, c});
         }
 
         StringBuilder sb = new StringBuilder();

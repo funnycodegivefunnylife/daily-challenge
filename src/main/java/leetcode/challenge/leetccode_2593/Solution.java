@@ -14,7 +14,8 @@ class Element {
 
 class Solution {
     public long findScore(int[] nums) {
-        PriorityQueue<Element> queue = new PriorityQueue<>((a, b) -> b.value == a.value ? a.index - b.index : a.value - b.value);
+        PriorityQueue<Element> queue =
+                new PriorityQueue<>((a, b) -> b.value == a.value ? a.index - b.index : a.value - b.value);
         int[] visited = new int[nums.length];
 
         for (int i = 0; i < nums.length; i++) {

@@ -5,13 +5,13 @@ import static org.junit.jupiter.api.Assertions.*;
 class SolutionTest {
     Solution solution = new Solution();
 
-    //"CAAAAAAAAAC"
+    // "CAAAAAAAAAC"
     //
-    //Use Testcase
-    //Output
-    //["CAAAAAAAAA"]
-    //Expected
-    //[]
+    // Use Testcase
+    // Output
+    // ["CAAAAAAAAA"]
+    // Expected
+    // []
 
     @org.junit.jupiter.api.Test
     void test1() {
@@ -19,7 +19,6 @@ class SolutionTest {
         java.util.List<String> expected = java.util.Arrays.asList("CAAAAAAAAA");
         java.util.List<String> actual = solution.findRepeatedDnaSequences(s);
         assertTrue(assertArrayStringEquals(expected, actual));
-
     }
 
     boolean assertArrayStringEquals(java.util.List<String> expected, java.util.List<String> actual) {

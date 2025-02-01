@@ -5,7 +5,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-
 class StringUtil {
     public static boolean isPalindrome(String s) {
         int i = 0;
@@ -27,13 +26,11 @@ class StringUtil {
 
         byte[] result = new byte[strAsByteArray.length];
 
-        for (int i = 0; i < strAsByteArray.length; i++)
-            result[i] = strAsByteArray[strAsByteArray.length - i - 1];
+        for (int i = 0; i < strAsByteArray.length; i++) result[i] = strAsByteArray[strAsByteArray.length - i - 1];
 
         return new String(result);
     }
 }
-
 
 class Trie {
     Map<Integer, Integer> indexMap = new HashMap<>();
@@ -46,7 +43,6 @@ class Trie {
         return indexMap.getOrDefault(StringUtil.reverse(s).hashCode(), -1);
     }
 }
-
 
 class Solution {
     public List<List<Integer>> palindromePairs(String[] words) {
@@ -76,11 +72,9 @@ class Solution {
                         result.add(List.of(i, index));
                     }
                 }
-
             }
         }
 
         return result;
     }
-
 }

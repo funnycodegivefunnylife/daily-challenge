@@ -28,8 +28,8 @@ class SolutionTest {
         assertEquals(expected, actual);
     }
 
-    //Input: s = "0000"
-    //Output: 0
+    // Input: s = "0000"
+    // Output: 0
     @Test
     void test3() {
         String s = "0000";

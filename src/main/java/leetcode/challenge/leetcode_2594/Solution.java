@@ -6,7 +6,6 @@ class Solution {
         long low = 0;
         long high = findMaximumTimeCanRepair(ranks, cars);
 
-
         while (low < high) {
             long mid = (high + low) / 2;
 
@@ -22,7 +21,7 @@ class Solution {
 
     private long findMaximumTimeCanRepair(int[] ranks, int cars) {
         int min = ranks[0];
-        for (int rank: ranks) {
+        for (int rank : ranks) {
             if (rank < min) {
                 min = rank;
             }
@@ -31,12 +30,11 @@ class Solution {
         return min * cars * cars;
     }
 
-
     public boolean canRepairIn(int[] ranks, int cars, long time) {
 
         int remainCars = cars;
 
-        for (int rank: ranks) {
+        for (int rank : ranks) {
             int nCarRepaired = (int) Math.sqrt(time / rank);
             remainCars -= nCarRepaired;
         }

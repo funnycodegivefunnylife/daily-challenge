@@ -11,6 +11,7 @@ class CharacterCount {
         this.count = count;
     }
 }
+
 class Solution {
     public String repeatLimitedString(String s, int repeatLimit) {
         char[] charArray = s.toCharArray();

@@ -1,8 +1,5 @@
 package leetcode.challenge.leetcode_684;
 
-import java.util.HashSet;
-import java.util.Set;
-
 class DisjointSet {
     int[] parent;
     int[] rank;
@@ -43,7 +40,6 @@ class DisjointSet {
     }
 }
 
-
 class Solution {
     public int[] findRedundantConnection(int[][] edges) {
 
@@ -69,8 +65,8 @@ class Solution {
 
         for (int[] edge : edges) {
             if (parent[edge[1]] != 0) {
-                candidate1 = new int[]{parent[edge[1]], edge[1]};
-                candidate2 = new int[]{edge[0], edge[1]};
+                candidate1 = new int[] {parent[edge[1]], edge[1]};
+                candidate2 = new int[] {edge[0], edge[1]};
                 continue;
             }
 

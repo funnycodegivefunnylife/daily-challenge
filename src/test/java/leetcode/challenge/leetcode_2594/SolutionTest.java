@@ -9,8 +9,8 @@ class SolutionTest {
 
     @Test
     public void test1() {
-        //Input: ranks = [4,2,3,1], cars = 10
-        //Output: 16
+        // Input: ranks = [4,2,3,1], cars = 10
+        // Output: 16
 
         int[] ranks = new int[] {4, 2, 3, 1};
         int cars = 10;
@@ -19,6 +19,5 @@ class SolutionTest {
         long actual = solution.repairCars(ranks, cars);
 
         assert expected == actual;
-
     }
 }

@@ -9,7 +9,7 @@ class SolutionTest {
 
     @Test
     void test7() {
-        int[] arr = new int[]{0};
+        int[] arr = new int[] {0};
         int expected = 1;
         int actual = solution.subarrayBitwiseORs(arr);
         assertEquals(expected, actual);
@@ -17,7 +17,7 @@ class SolutionTest {
 
     @Test
     void test1() {
-        int[] arr = new int[]{0};
+        int[] arr = new int[] {0};
         int expected = 1;
         int actual = solution.subarrayBitwiseORs(arr);
         assertEquals(expected, actual);
@@ -25,7 +25,7 @@ class SolutionTest {
 
     @Test
     void test2() {
-        int[] arr = new int[]{1, 1, 2};
+        int[] arr = new int[] {1, 1, 2};
         int expected = 3;
         int actual = solution.subarrayBitwiseORs(arr);
         assertEquals(expected, actual);
@@ -33,13 +33,13 @@ class SolutionTest {
 
     @Test
     void test3() {
-        int[] arr = new int[]{1, 2, 4};
+        int[] arr = new int[] {1, 2, 4};
         int expected = 6;
         int actual = solution.subarrayBitwiseORs(arr);
         assertEquals(expected, actual);
     }
 
-    //calculateNBit
+    // calculateNBit
     @Test
     void test4() {
         int n = 1;

@@ -1,6 +1,5 @@
 package leetcode.challenge.leetcode_2981;
 
-
 import java.util.Map;
 
 class Solution {
@@ -37,5 +36,4 @@ class Solution {
 
         return max;
     }
-
 }

@@ -9,7 +9,7 @@ public class TestMinSubArrayCalculator {
     @Test
     @DisplayName("Given arr: [1000000000,1000000000,1000000000] and p = 3, the method should return 0")
     public void test1() {
-        int[] arr = new int[]{1000000000, 1000000000, 1000000000};
+        int[] arr = new int[] {1000000000, 1000000000, 1000000000};
         int p = 3;
         assert MinSubArrayCalculator.minSubarray(arr, p) == 0;
     }
