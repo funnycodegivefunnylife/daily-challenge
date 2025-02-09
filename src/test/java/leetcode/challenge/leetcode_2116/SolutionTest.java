@@ -8,7 +8,6 @@ import static org.junit.jupiter.api.Assertions.*;
 class SolutionTest {
     Solution solution = new Solution();
 
-
     @Test
     @DisplayName("Given string s: ))())), 010100, Output: true")
     public void test1() {
@@ -42,14 +41,14 @@ class SolutionTest {
         assertEquals(expected, actual);
     }
 
-    //s =
-    //")("
-    //locked =
-    //"00"
-    //Output
-    //false
-    //Expected
-    //true
+    // s =
+    // ")("
+    // locked =
+    // "00"
+    // Output
+    // false
+    // Expected
+    // true
 
     @Test
     @DisplayName("Given string s: )((, 00, Output: true")

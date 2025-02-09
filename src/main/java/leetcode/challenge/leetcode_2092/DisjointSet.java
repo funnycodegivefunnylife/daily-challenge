@@ -48,7 +48,7 @@ class Solution {
         Map<Integer, List<int[]>> timeToMeetings = new TreeMap<>(); // Sorted automatically
 
         for (int[] meeting : meetings) {
-            timeToMeetings.computeIfAbsent(meeting[2], k -> new ArrayList<>()).add(new int[]{meeting[0], meeting[1]});
+            timeToMeetings.computeIfAbsent(meeting[2], k -> new ArrayList<>()).add(new int[] {meeting[0], meeting[1]});
         }
 
         for (int time : timeToMeetings.keySet()) {

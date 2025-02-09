@@ -16,7 +16,6 @@ class Solution {
             valueToIndex.put(nums[i], i);
         }
 
-
         return false;
     }
 }

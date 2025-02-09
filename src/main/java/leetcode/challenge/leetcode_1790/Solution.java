@@ -2,7 +2,7 @@ package leetcode.challenge.leetcode_1790;
 
 class Solution {
     public boolean areAlmostEqual(String s1, String s2) {
-        
+
         if (s1.length() != s2.length()) {
             return false;
         }
@@ -10,7 +10,6 @@ class Solution {
         if (s1.equals(s2)) {
             return true;
         }
-
 
         int first = -1;
         int second = -1;
@@ -28,6 +27,5 @@ class Solution {
         }
 
         return second != -1 && s1.charAt(first) == s2.charAt(second) && s1.charAt(second) == s2.charAt(first);
-        
     }
 }

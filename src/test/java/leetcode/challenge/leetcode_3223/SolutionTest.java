@@ -9,8 +9,8 @@ class SolutionTest {
 
     @Test
     public void test1() {
-        //s =
-        //"abaacbcbb"
+        // s =
+        // "abaacbcbb"
         String s = "abaacbcbb";
         int expected = 5;
 

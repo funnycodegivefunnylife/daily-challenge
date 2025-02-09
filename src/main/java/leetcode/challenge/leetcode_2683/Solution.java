@@ -1,6 +1,5 @@
 package leetcode.challenge.leetcode_2683;
 
-
 class Solution {
     public boolean doesValidArrayExist(int[] derived) {
 
@@ -15,7 +14,6 @@ class Solution {
         return canStartWith(derived, 0) || canStartWith(derived, 1);
     }
 
-
     public boolean canStartWith(int[] derived, int start) {
 
         int[] original = new int[derived.length];
@@ -27,7 +25,6 @@ class Solution {
                 original[i] = 1 - original[i - 1];
             }
         }
-
 
         return (original[derived.length - 1] ^ original[0]) == derived[derived.length - 1];
     }

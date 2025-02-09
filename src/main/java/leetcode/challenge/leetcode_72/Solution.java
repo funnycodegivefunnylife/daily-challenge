@@ -11,12 +11,9 @@ class Solution {
             for (int j = 1; j <= word2.length(); j++) {
                 char second = word2s[j - 1];
 
-                if (first == second) {
-
-                }
+                if (first == second) {}
             }
         }
-
 
         return 0;
     }
