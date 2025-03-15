@@ -2,12 +2,10 @@ package leetcode.challenge.leetcode_2529;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class SolutionTest {
     Solution solution = new Solution();
-
-
 
     @Test
     public void test1() {
@@ -18,7 +16,7 @@ class SolutionTest {
         assertEquals(expected, actual);
     }
 
-    //[-3,-2,-1,0,0,1,2]
+    // [-3,-2,-1,0,0,1,2]
 
     @Test
     public void test2() {
@@ -29,7 +27,7 @@ class SolutionTest {
         assertEquals(expected, actual);
     }
 
-    //[5,20,66,1314]
+    // [5,20,66,1314]
 
     @Test
     public void test3() {

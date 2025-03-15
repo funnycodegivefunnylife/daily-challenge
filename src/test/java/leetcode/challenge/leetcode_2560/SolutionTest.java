@@ -37,11 +37,11 @@ class SolutionTest {
         assertFalse(actual);
     }
 
-    //nums =
-    //[2,3,5,9]
-    //k =
-    //2
-    //Output 5
+    // nums =
+    // [2,3,5,9]
+    // k =
+    // 2
+    // Output 5
 
     @Test
     public void test4() {
@@ -53,9 +53,9 @@ class SolutionTest {
         assertEquals(expected, actual);
     }
 
-    //[2,7,9,3,1]
-    //k =
-    //2
+    // [2,7,9,3,1]
+    // k =
+    // 2
 
     @Test
     public void test5() {

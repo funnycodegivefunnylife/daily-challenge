@@ -27,7 +27,6 @@ class Solution {
             minNumberOfWhite = Math.min(minNumberOfWhite, currentNumberOfWhite);
         }
 
-
         return minNumberOfWhite;
     }
 }

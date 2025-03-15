@@ -2,12 +2,11 @@ package leetcode.challenge.leetcode_1524;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class SolutionTest {
 
     Solution solution = new Solution();
-
 
     @Test
     public void test1() {

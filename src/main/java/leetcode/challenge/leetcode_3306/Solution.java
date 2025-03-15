@@ -1,6 +1,5 @@
 package leetcode.challenge.leetcode_3306;
 
-
 import java.util.HashMap;
 
 class Solution {
@@ -30,10 +29,7 @@ class Solution {
 
             // update counts
             if (isVowel(newLetter)) {
-                vowelCount.put(
-                        newLetter,
-                        vowelCount.getOrDefault(newLetter, 0) + 1
-                );
+                vowelCount.put(newLetter, vowelCount.getOrDefault(newLetter, 0) + 1);
             } else {
                 consonantCount++;
             }
@@ -42,10 +38,7 @@ class Solution {
             while (consonantCount > k) {
                 char startLetter = word.charAt(start);
                 if (isVowel(startLetter)) {
-                    vowelCount.put(
-                            startLetter,
-                            vowelCount.get(startLetter) - 1
-                    );
+                    vowelCount.put(startLetter, vowelCount.get(startLetter) - 1);
                     if (vowelCount.get(startLetter) == 0) {
                         vowelCount.remove(startLetter);
                     }
@@ -56,19 +49,12 @@ class Solution {
             }
 
             // while we have a valid window, try to shrink it
-            while (
-                    start < word.length() &&
-                            vowelCount.keySet().size() == 5 &&
-                            consonantCount == k
-            ) {
+            while (start < word.length() && vowelCount.keySet().size() == 5 && consonantCount == k) {
                 // count the current valid substring, as well as valid substrings produced by appending more vowels
                 numValidSubstrings += nextConsonant[end] - end;
                 char startLetter = word.charAt(start);
                 if (isVowel(startLetter)) {
-                    vowelCount.put(
-                            startLetter,
-                            vowelCount.get(startLetter) - 1
-                    );
+                    vowelCount.put(startLetter, vowelCount.get(startLetter) - 1);
                     if (vowelCount.get(startLetter) == 0) {
                         vowelCount.remove(startLetter);
                     }

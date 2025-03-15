@@ -1,8 +1,6 @@
 package leetcode.challenge.leetcode_3174;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
-import java.util.List;
 import java.util.Queue;
 
 enum State {
@@ -20,12 +18,10 @@ class Solution {
             if (Character.isDigit(s.charAt(i))) {
                 digitIndices.add(i);
                 states[i] = State.DIGIT;
-            }
-            else {
+            } else {
                 states[i] = State.ALPHABET;
             }
         }
-
 
         while (digitIndices.size() > 0) {
             int index = digitIndices.poll();

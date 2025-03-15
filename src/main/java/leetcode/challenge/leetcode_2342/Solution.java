@@ -8,7 +8,7 @@ class Solution {
         int[] digitSum = new int[nums.length];
         int maxPairSum = -1;
 
-        Map<Integer, int[]> sumDigitToMaxPair  = new HashMap<>();
+        Map<Integer, int[]> sumDigitToMaxPair = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
             digitSum[i] = sumDigits(nums[i]);
 

@@ -1,6 +1,5 @@
 package leetcode.challenge.leetcode_3356;
 
-
 class Solution {
     public int minZeroArray(int[] nums, int[][] queries) {
 
@@ -48,5 +47,4 @@ class Solution {
 
         return true;
     }
-
 }

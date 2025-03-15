@@ -21,7 +21,6 @@ class Solution {
             while (firstIndex < lastIndex && s.charAt(lastIndex) == lastChar) {
                 lastIndex--;
             }
-
         }
 
         return lastIndex - firstIndex + 1;

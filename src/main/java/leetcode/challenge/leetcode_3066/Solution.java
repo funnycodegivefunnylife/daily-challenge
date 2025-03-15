@@ -1,6 +1,5 @@
 package leetcode.challenge.leetcode_3066;
 
-import java.util.Locale;
 import java.util.PriorityQueue;
 
 class Solution {

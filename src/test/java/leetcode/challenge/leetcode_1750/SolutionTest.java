@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class SolutionTest {
     Solution solution = new Solution();
 
-    //"cabaabac"
+    // "cabaabac"
 
     @Test
     public void test1() {

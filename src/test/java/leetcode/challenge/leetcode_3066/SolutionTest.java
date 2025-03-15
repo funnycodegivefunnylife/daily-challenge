@@ -2,13 +2,13 @@ package leetcode.challenge.leetcode_3066;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class SolutionTest {
     Solution solution = new Solution();
 
-    //Input: nums = [1,1,2,4,9], k = 20
-    //Output: 4
+    // Input: nums = [1,1,2,4,9], k = 20
+    // Output: 4
 
     @Test
     public void test1() {

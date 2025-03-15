@@ -15,13 +15,17 @@ package leetcode.challenge.leetcode_889;
  *     }
  * }
  */
-
 class TreeNode {
     int val;
     TreeNode left;
     TreeNode right;
+
     TreeNode() {}
-    TreeNode(int val) { this.val = val; }
+
+    TreeNode(int val) {
+        this.val = val;
+    }
+
     TreeNode(int val, TreeNode left, TreeNode right) {
         this.val = val;
         this.left = left;
@@ -29,9 +33,7 @@ class TreeNode {
     }
 }
 
-
 class Solution {
-
 
     public TreeNode constructFromPrePost(int[] pre, int[] post) {
         return buildTree(pre, post, 0, pre.length - 1, 0, post.length - 1);
