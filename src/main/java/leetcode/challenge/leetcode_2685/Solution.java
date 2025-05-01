@@ -59,7 +59,6 @@ class UnionFind {
     }
 }
 
-
 class Solution {
     public int countCompleteComponents(int n, int[][] edges) {
 
@@ -70,7 +69,6 @@ class Solution {
             graph[edge[0]][edge[1]] = 1;
             graph[edge[1]][edge[0]] = 1;
         }
-
 
         Map<Integer, List<Integer>> rankToNodes = uf.getRankToNodes();
 
@@ -86,6 +84,4 @@ class Solution {
 
         return count;
     }
-
-
 }

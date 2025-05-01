@@ -2,7 +2,7 @@ package leetcode.challenge.leetcode_680;
 
 class Solution {
     public boolean validPalindrome(String s) {
-        
+
         int skip = 0;
 
         int start = 0;
@@ -19,8 +19,6 @@ class Solution {
                 break;
             }
         }
-
-
 
         return skip == 0 || checkPalindrome(s, start) || checkPalindrome(s, end);
     }

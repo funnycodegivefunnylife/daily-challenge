@@ -1,8 +1,8 @@
 package leetcode.challenge.leetcode_2302;
 
-/** * This class provides a solution to the problem of counting subarrays
- * where the product of the sum and length of the subarray is less than k.
- * It uses a binary search approach to find valid indices efficiently.
+/** * This interface is used to check if an index is valid for the given condition.
+ * It takes an index as input and returns a boolean indicating whether the
+ * index satisfies the condition.
  */
 @FunctionalInterface
 interface ValidIndexChecker {

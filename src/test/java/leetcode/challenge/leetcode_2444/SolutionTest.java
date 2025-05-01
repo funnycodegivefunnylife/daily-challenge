@@ -7,8 +7,8 @@ import static org.junit.jupiter.api.Assertions.*;
 class SolutionTest {
     Solution solution = new Solution();
 
-    //Input: nums = [1,3,5,2,7,5], minK = 1, maxK = 5
-    //Output: 2
+    // Input: nums = [1,3,5,2,7,5], minK = 1, maxK = 5
+    // Output: 2
 
     @Test
     void countSubarrays() {
@@ -21,11 +21,11 @@ class SolutionTest {
         assertEquals(expected, result);
     }
 
-    //[1,1,1,1]
-    //minK =
-    //1
-    //maxK =
-    //1
+    // [1,1,1,1]
+    // minK =
+    // 1
+    // maxK =
+    // 1
 
     @Test
     void countSubarrays2() {

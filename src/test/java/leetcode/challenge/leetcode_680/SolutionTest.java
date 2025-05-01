@@ -1,6 +1,5 @@
 package leetcode.challenge.leetcode_680;
 
-
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -10,10 +9,11 @@ class SolutionTest {
 
     @Test
     void validPalindrome() {
-        String s = "aguokepatgbnvfqmgmlcupuufxoohdfpgjdmysgvhmvffcnqxjjxqncffvmhvgsymdjgpfdhooxfuupuculmgmqfvnbgtapekouga";
+        String s =
+                "aguokepatgbnvfqmgmlcupuufxoohdfpgjdmysgvhmvffcnqxjjxqncffvmhvgsymdjgpfdhooxfuupuculmgmqfvnbgtapekouga";
         boolean result = solution.validPalindrome(s);
         boolean expected = true;
 
-        assertEquals (expected, result);
+        assertEquals(expected, result);
     }
 }

@@ -1,4 +1,4 @@
-package leetcode.challenge.leetcode_2302;
+package leetcode.challenge.leetcode_2962;
 
 import org.junit.jupiter.api.Test;
 
@@ -9,8 +9,8 @@ class SolutionTest {
 
     @Test
     void countSubarrays() {
-        int[] nums = {2, 1, 4, 3, 5};
-        int k = 10;
+        int[] nums = {1, 3, 2, 3, 3};
+        int k = 2;
         long result = solution.countSubarrays(nums, k);
         long expected = 6L;
 

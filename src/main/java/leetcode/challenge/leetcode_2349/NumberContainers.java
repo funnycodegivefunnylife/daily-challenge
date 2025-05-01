@@ -1,17 +1,17 @@
 package leetcode.challenge.leetcode_2349;
 
-
 import java.util.Map;
 import java.util.SortedSet;
 
 class NumberContainers {
     Map<Integer, SortedSet<Integer>> numberToIndex;
     Map<Integer, Integer> indexToNumber;
+
     public NumberContainers() {
         numberToIndex = new java.util.HashMap<>();
         indexToNumber = new java.util.HashMap<>();
     }
-    
+
     public void change(int index, int number) {
         if (indexToNumber.containsKey(index)) {
             removeFromNumberToIndex(index);
@@ -34,7 +34,7 @@ class NumberContainers {
             numberToIndex.remove(number);
         }
     }
-    
+
     public int find(int number) {
         SortedSet<Integer> indexes = numberToIndex.get(number);
         if (indexes == null) {

@@ -16,7 +16,7 @@ class Solution {
         for (int i = 1; i < n; i++) {
             if (nums[i] >= nums[i - 1]) {
                 trackInc[i] = trackInc[i - 1] + 1;
-            } 
+            }
             if (nums[i] <= nums[i - 1]) {
                 trackDec[i] = trackDec[i - 1] + 1;
             }
@@ -31,7 +31,6 @@ class Solution {
         }
 
         return goodIndices;
-
     }
 
     boolean isGoodIndex(int index, int[] trackInc, int[] trackDec, int k) {
@@ -44,6 +43,4 @@ class Solution {
 
         return nonIncre == k && nonDec == k;
     }
-
-   
 }

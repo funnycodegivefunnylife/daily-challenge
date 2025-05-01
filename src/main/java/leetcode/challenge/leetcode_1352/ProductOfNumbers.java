@@ -5,11 +5,12 @@ import java.util.Map;
 class ProductOfNumbers {
     private Map<Integer, Integer> product;
     private int size;
+
     public ProductOfNumbers() {
         product = new java.util.HashMap<>();
         size = 0;
     }
-    
+
     public void add(int num) {
         if (num == 0) {
             product.clear();
@@ -19,7 +20,7 @@ class ProductOfNumbers {
         int lastProduct = size == 0 ? 1 : product.get(size);
         product.put(++size, lastProduct * num);
     }
-    
+
     public int getProduct(int k) {
         if (k > size) {
             return 0;

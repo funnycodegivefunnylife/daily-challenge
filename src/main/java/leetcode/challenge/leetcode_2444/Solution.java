@@ -1,6 +1,5 @@
 package leetcode.challenge.leetcode_2444;
 
-
 class Solution {
     public long countSubarrays(int[] nums, int minK, int maxK) {
 
@@ -15,7 +14,7 @@ class Solution {
                 maxIndex = -1;
                 minIndex = -1;
             } else {
-                if (maxIndex == - 1 || nums[end] >= nums[maxIndex]) {
+                if (maxIndex == -1 || nums[end] >= nums[maxIndex]) {
                     maxIndex = end;
                 }
 
@@ -31,6 +30,4 @@ class Solution {
 
         return count;
     }
-
 }
-
