@@ -1,9 +1,6 @@
 package leetcode.challenge.leetcode_2701;
 
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.PriorityQueue;
-import java.util.TreeMap;
+import java.util.*;
 
 class Solution {
     public int maxTaskAssign(int[] tasks, int[] workers, int pills, int strength) {
@@ -62,3 +59,4 @@ class Solution {
         return true;
     }
 }
+
