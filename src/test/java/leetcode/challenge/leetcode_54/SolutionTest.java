@@ -1,4 +1,4 @@
-package leetcode.challenge.leetcode_233;
+package leetcode.challenge.leetcode_54;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
@@ -6,7 +6,7 @@ import org.junit.jupiter.api.BeforeEach;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- * Test class for LeetCode Problem 233
+ * Test class for LeetCode Problem 54
  */
 class SolutionTest {
 
