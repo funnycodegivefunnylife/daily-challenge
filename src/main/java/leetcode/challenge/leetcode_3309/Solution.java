@@ -13,7 +13,13 @@ class Solution {
         int thirdFirstSecond = fromBinaryString(third + first + second);
         int thirdSecondFirst = fromBinaryString(third + second + first);
 
-        int max = Math.max(firstSecondThird, Math.max(firstThirdSecond, Math.max(secondFirstThird, Math.max(secondThirdFirst, Math.max(thirdFirstSecond, thirdSecondFirst)))));
+        int max = Math.max(
+                firstSecondThird,
+                Math.max(
+                        firstThirdSecond,
+                        Math.max(
+                                secondFirstThird,
+                                Math.max(secondThirdFirst, Math.max(thirdFirstSecond, thirdSecondFirst)))));
         return max;
     }
 

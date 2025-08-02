@@ -1,6 +1,5 @@
 package leetcode.challenge.leetcode_2311;
 
-
 class Solution {
     public int longestSubsequence(String s, int k) {
 

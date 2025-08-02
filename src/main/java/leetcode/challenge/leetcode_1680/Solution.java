@@ -2,6 +2,7 @@ package leetcode.challenge.leetcode_1680;
 
 class Solution {
     private static final int MOD = 1_000_000_007;
+
     public int concatenatedBinary(int n) {
         StringBuilder sb = new StringBuilder();
 

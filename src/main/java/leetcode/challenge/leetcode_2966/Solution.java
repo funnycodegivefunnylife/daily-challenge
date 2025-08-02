@@ -24,7 +24,6 @@ class Solution {
                 index++;
                 min = i < nums.length - 1 ? nums[i + 1] : Integer.MAX_VALUE;
             }
-
         }
         return rs;
     }

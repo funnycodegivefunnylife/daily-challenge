@@ -1,7 +1,7 @@
 package leetcode.challenge.leetcode_3202;
 
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -17,7 +17,7 @@ class SolutionTest {
         solution = new Solution();
     }
 
-   //[1,2,3,4,5]
+    // [1,2,3,4,5]
 
     @Test
     void testMaximumLength() {
@@ -26,5 +26,4 @@ class SolutionTest {
         int expected = 5;
         assertEquals(expected, solution.maximumLength(nums, k));
     }
-
 }

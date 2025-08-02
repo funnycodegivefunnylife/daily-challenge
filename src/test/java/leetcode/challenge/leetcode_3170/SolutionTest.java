@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class SolutionTest {
     private final Solution solution = new Solution();
-    //"d*d*"
+    // "d*d*"
 
     @Test
     void clearStars() {
@@ -17,8 +17,8 @@ class SolutionTest {
         assertEquals(expected, result);
     }
 
-    //"s*z*"
-    //"s*z*"
+    // "s*z*"
+    // "s*z*"
 
     @Test
     void clearStars2() {
@@ -28,5 +28,4 @@ class SolutionTest {
 
         assertEquals(expected, result);
     }
-
 }

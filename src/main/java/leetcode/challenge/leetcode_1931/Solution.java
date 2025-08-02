@@ -1,6 +1,5 @@
 package leetcode.challenge.leetcode_1931;
 
-
 import java.util.*;
 
 class Solution {
@@ -36,11 +35,12 @@ class Solution {
         for (int state1 : validStates) {
             for (int state2 : validStates) {
                 if (validTransition(state1, state2, m)) {
-                    validTransitions.computeIfAbsent(state1, k -> new ArrayList<>()).add(state2);
+                    validTransitions
+                            .computeIfAbsent(state1, k -> new ArrayList<>())
+                            .add(state2);
                 }
             }
         }
-
 
         for (int colums = 1; colums < n; colums++) {
             int[] newDpCount = new int[maxState];
@@ -95,7 +95,7 @@ class Solution {
         int lastColor = -1;
 
         for (int i = 0; i < stateLength; i++) {
-           int currentColor = state % MAX_COLOR;
+            int currentColor = state % MAX_COLOR;
             if (currentColor == lastColor) {
                 return false;
             }

@@ -25,7 +25,6 @@ class Solution {
 
         int minDeletions = Integer.MAX_VALUE;
 
-
         for (int lowerBound : uniqueFreq) {
             int upperBound = lowerBound + k;
             int deletionsNeeded = countDeletions(freq, lowerBound, upperBound);

@@ -5,7 +5,7 @@ class Solution {
 
         int consecutiveOdds = 0;
 
-        for (int num: arr) {
+        for (int num : arr) {
             if (num % 2 != 0) {
                 consecutiveOdds++;
                 if (consecutiveOdds == 3) {

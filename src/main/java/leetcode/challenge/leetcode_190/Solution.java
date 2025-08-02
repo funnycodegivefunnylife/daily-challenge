@@ -1,6 +1,5 @@
 package leetcode.challenge.leetcode_190;
 
-
 class Solution {
     public int reverseBits(int n) {
 

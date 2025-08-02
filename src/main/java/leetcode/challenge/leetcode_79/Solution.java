@@ -30,15 +30,13 @@ class Solution {
         char temp = board[i][j];
         board[i][j] = '#'; // Mark as visited
 
-        boolean found = search(board, word, i + 1, j, index + 1) ||
-                        search(board, word, i - 1, j, index + 1) ||
-                        search(board, word, i, j + 1, index + 1) ||
-                        search(board, word, i, j - 1, index + 1);
+        boolean found = search(board, word, i + 1, j, index + 1)
+                || search(board, word, i - 1, j, index + 1)
+                || search(board, word, i, j + 1, index + 1)
+                || search(board, word, i, j - 1, index + 1);
 
         board[i][j] = temp; // Restore the original character
 
         return found;
     }
-
-
 }

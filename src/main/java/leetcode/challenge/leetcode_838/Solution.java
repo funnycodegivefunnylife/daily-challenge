@@ -1,6 +1,5 @@
 package leetcode.challenge.leetcode_838;
 
-
 class Solution {
     public String pushDominoes(String dominoes) {
 

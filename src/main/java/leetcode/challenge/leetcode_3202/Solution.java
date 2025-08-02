@@ -14,10 +14,8 @@ class Solution {
             int count = countMap.getOrDefault(expected, 0);
             countMap.put(mod, count + 1);
             maxLength = Math.max(maxLength, count + 1);
-
         }
 
         return maxLength;
-
     }
 }

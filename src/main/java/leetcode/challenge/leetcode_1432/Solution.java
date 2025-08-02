@@ -7,8 +7,6 @@ class Solution {
         String maxNum = findMaxNum(numStr);
         String minNum = findMinNum(numStr);
 
-
-
         return Integer.parseInt(maxNum) - Integer.parseInt(minNum);
     }
 

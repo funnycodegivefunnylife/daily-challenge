@@ -3,8 +3,7 @@ package leetcode.challenge.leetcode_3170;
 class Solution {
     public String clearStars(String s) {
 
-        char [] chars = s.toCharArray();
-
+        char[] chars = s.toCharArray();
 
         for (int i = 0; i < chars.length; i++) {
             if (chars[i] == '*') {

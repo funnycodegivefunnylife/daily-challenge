@@ -4,15 +4,16 @@ class Solution {
     private int[] nums;
 
     private int[] original;
+
     public Solution(int[] nums) {
         this.nums = nums;
         this.original = nums.clone();
     }
-    
+
     public int[] reset() {
         return original;
     }
-    
+
     public int[] shuffle() {
         int[] shuffled = nums.clone();
         for (int i = 0; i < shuffled.length; i++) {

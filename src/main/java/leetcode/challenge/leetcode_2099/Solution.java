@@ -1,6 +1,5 @@
 package leetcode.challenge.leetcode_2099;
 
-
 import java.util.Comparator;
 
 class Element {

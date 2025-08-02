@@ -1,6 +1,5 @@
 package leetcode.challenge.leetcode_233;
 
-
 class Solution {
     public int countDigitOne(int n) {
         if (n <= 0) {

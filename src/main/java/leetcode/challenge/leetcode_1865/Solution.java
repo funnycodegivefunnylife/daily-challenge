@@ -17,7 +17,6 @@ class FindSumPairs {
 
         nums1Map = initializeMap(nums1);
         nums2Map = initializeMap(nums2);
-
     }
 
     private Map<Integer, Integer> initializeMap(int[] nums) {
@@ -70,8 +69,4 @@ class FindSumPairs {
  * obj.add(index,val);
  * int param_2 = obj.count(tot);
  */
-
-
-class Solution {
-
-}
+class Solution {}

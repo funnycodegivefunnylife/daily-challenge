@@ -5,10 +5,10 @@ import java.util.List;
 
 /**
  * LeetCode Problem 2200
- * 
+ *
  * TODO: Add problem description and link
  * Link: https://leetcode.com/problems/
- * 
+ *
  * Time Complexity: O(?)
  * Space Complexity: O(?)
  */

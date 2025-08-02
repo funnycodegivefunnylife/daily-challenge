@@ -1,7 +1,7 @@
 package leetcode.challenge.leetcode_1647;
 
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -19,11 +19,10 @@ class SolutionTest {
 
     @Test
     void testExample1() {
-       
+
         String s = "aaabbbcc";
         int result = solution.minDeletions(s);
         int expected = 2;
         assertEquals(expected, result);
     }
-
 }

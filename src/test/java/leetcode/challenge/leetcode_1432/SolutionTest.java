@@ -35,7 +35,7 @@ class SolutionTest {
         assertEquals(expected, result);
     }
 
-    //9288
+    // 9288
     @Test
     void given_9288_when_findMaxNum_then_return_9988() {
         int num = 9288;

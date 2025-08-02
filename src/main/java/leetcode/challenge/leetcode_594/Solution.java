@@ -1,6 +1,5 @@
 package leetcode.challenge.leetcode_594;
 
-
 import java.util.Map;
 
 class Solution {

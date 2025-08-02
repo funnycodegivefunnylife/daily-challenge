@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class SolutionTest {
     Solution solution = new Solution();
 
-    //"RR.L"
+    // "RR.L"
 
     @Test
     void pushDominoes() {
@@ -18,7 +18,7 @@ class SolutionTest {
         assertEquals(expected, result);
     }
 
-    //".L.R...LR..L.."
+    // ".L.R...LR..L.."
     @Test
     void pushDominoes2() {
         String dominoes = ".L.R...LR..L..";

@@ -1,7 +1,7 @@
 package leetcode.challenge.leetcode_3085;
 
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -19,9 +19,9 @@ class SolutionTest {
 
     @Test
     void testExample1() {
-        //Input: word = "aabcaba", k = 0
+        // Input: word = "aabcaba", k = 0
         //
-        //Output: 3
+        // Output: 3
 
         String word = "aabcaba";
         int k = 0;
@@ -31,7 +31,7 @@ class SolutionTest {
         assertEquals(expected, result);
     }
 
-    //Input: word = "dabdcbdcdcd", k = 2
+    // Input: word = "dabdcbdcdcd", k = 2
 
     @Test
     void testExample2() {
@@ -43,16 +43,16 @@ class SolutionTest {
         assertEquals(expected, result);
     }
 
-    //word =
-    //"r"
-    //k =
-    //0
+    // word =
+    // "r"
+    // k =
+    // 0
     //
-    //Use Testcase
-    //Output
-    //1
-    //Expected
-    //0
+    // Use Testcase
+    // Output
+    // 1
+    // Expected
+    // 0
     @Test
     void testSingleCharacter() {
         String word = "r";
@@ -62,5 +62,4 @@ class SolutionTest {
 
         assertEquals(expected, result);
     }
-
 }

@@ -7,7 +7,6 @@ class Solution {
         Arrays.sort(tasks);
         Arrays.sort(workers);
 
-
         int left = 1;
         int right = Math.min(tasks.length, workers.length);
         int result = 0;
@@ -59,4 +58,3 @@ class Solution {
         return true;
     }
 }
-

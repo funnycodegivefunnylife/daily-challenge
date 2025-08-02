@@ -11,7 +11,9 @@ class Solution {
 
         for (String str : strs) {
             String rearranged = rearrange(str);
-            bitMaskToListStr.computeIfAbsent(rearranged, k -> new java.util.ArrayList<>()).add(str);
+            bitMaskToListStr
+                    .computeIfAbsent(rearranged, k -> new java.util.ArrayList<>())
+                    .add(str);
         }
 
         return new java.util.ArrayList<>(bitMaskToListStr.values());
